@@ -33,223 +33,211 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "icon": "book-open",
-        "groups": [
+        "group": "Home",
+        "pages": [
+          "index",
+          "changelog"
+        ]
+      },
+      {
+        "group": "Getting started",
+        "icon": "rocket",
+        "pages": [
+          "getting-started/welcome-to-polimorphic",
+          "getting-started/quickstart-your-first-day",
+          "getting-started/log-in-and-reset-your-password",
+          "getting-started/glossary"
+        ]
+      },
+      {
+        "group": "Working in Polimorphic",
+        "icon": "briefcase",
+        "pages": [
           {
-            "group": "Home",
+            "group": "Cases",
             "pages": [
-              "index"
+              "working-in-polimorphic/cases/what-is-a-case",
+              "working-in-polimorphic/cases/find-and-triage-a-case",
+              "working-in-polimorphic/cases/create-and-assign-a-case",
+              "working-in-polimorphic/cases/communicate-with-a-resident-from-a-case",
+              "working-in-polimorphic/cases/case-statuses-and-the-document-center"
             ]
           },
           {
-            "group": "Getting started",
-            "icon": "rocket",
+            "group": "Contacts",
             "pages": [
-              "getting-started/welcome-to-polimorphic",
-              "getting-started/quickstart-your-first-day",
-              "getting-started/log-in-and-reset-your-password",
-              "getting-started/glossary"
+              "working-in-polimorphic/contacts/how-contacts-and-interaction-history-work",
+              "working-in-polimorphic/contacts/add-or-edit-a-contact",
+              "working-in-polimorphic/contacts/import-contacts-from-a-file",
+              "working-in-polimorphic/contacts/contact-fields"
             ]
           },
           {
-            "group": "Working in Polimorphic",
-            "icon": "briefcase",
+            "group": "Payments",
             "pages": [
-              {
-                "group": "Cases",
-                "pages": [
-                  "working-in-polimorphic/cases/what-is-a-case",
-                  "working-in-polimorphic/cases/find-and-triage-a-case",
-                  "working-in-polimorphic/cases/create-and-assign-a-case",
-                  "working-in-polimorphic/cases/communicate-with-a-resident-from-a-case",
-                  "working-in-polimorphic/cases/case-statuses-and-the-document-center"
-                ]
-              },
-              {
-                "group": "Contacts",
-                "pages": [
-                  "working-in-polimorphic/contacts/how-contacts-and-interaction-history-work",
-                  "working-in-polimorphic/contacts/add-or-edit-a-contact",
-                  "working-in-polimorphic/contacts/import-contacts-from-a-file",
-                  "working-in-polimorphic/contacts/contact-fields"
-                ]
-              },
-              {
-                "group": "Payments",
-                "pages": [
-                  "working-in-polimorphic/payments/how-to-connect-your-stripe-account-to-accept-payments",
-                  "working-in-polimorphic/payments/take-a-payment-on-behalf-of-a-resident",
-                  "working-in-polimorphic/payments/create-and-bulk-upload-bills",
-                  "working-in-polimorphic/payments/transactions-receipts-and-payout-batches"
-                ]
-              },
-              {
-                "group": "Mass communications",
-                "pages": [
-                  "working-in-polimorphic/mass-communications/send-an-email-or-sms-to-many-residents",
-                  "working-in-polimorphic/mass-communications/why-a-recipient-didn-t-receive-a-message"
-                ]
-              },
-              {
-                "group": "Organization and Account Settings",
-                "pages": [
-                  "working-in-polimorphic/organization-and-account-settings/how-to-download-account-information"
-                ]
-              },
-              {
-                "group": "Workflows",
-                "pages": [
-                  "working-in-polimorphic/workflows/how-to-give-someone-direct-access-to-cases",
-                  "working-in-polimorphic/workflows/how-to-build-branching-paths-in-a-workflow",
-                  "working-in-polimorphic/workflows/how-to-choose-how-residents-verify-themselves-before-starting-a-workflow"
-                ]
-              },
-              {
-                "group": "Contacts and Communication",
-                "pages": [
-                  "working-in-polimorphic/contacts-and-communication/how-to-update-a-contact",
-                  "working-in-polimorphic/contacts-and-communication/capturing-replies-to-emails",
-                  "working-in-polimorphic/contacts-and-communication/how-replies-to-case-emails-reach-your-team"
-                ]
-              }
+              "working-in-polimorphic/payments/how-to-connect-your-stripe-account-to-accept-payments",
+              "working-in-polimorphic/payments/take-a-payment-on-behalf-of-a-resident",
+              "working-in-polimorphic/payments/create-and-bulk-upload-bills",
+              "working-in-polimorphic/payments/transactions-receipts-and-payout-batches"
             ]
           },
           {
-            "group": "AI Front Desk",
-            "icon": "message-bot",
+            "group": "Mass communications",
             "pages": [
-              {
-                "group": "How the AI answers",
-                "pages": [
-                  "ai-front-desk/how-the-ai-answers/how-the-ai-finds-and-writes-answers",
-                  "ai-front-desk/how-the-ai-answers/test-the-ai-before-go-live",
-                  "ai-front-desk/how-the-ai-answers/improve-a-wrong-or-weak-answer"
-                ]
-              },
-              {
-                "group": "Knowledge base",
-                "pages": [
-                  "ai-front-desk/knowledge-base/knowledge-base-sources",
-                  "ai-front-desk/knowledge-base/add-documents-links-and-faqs",
-                  "ai-front-desk/knowledge-base/crawl-your-website-and-set-a-refresh-cadence",
-                  "ai-front-desk/knowledge-base/add-gis-layers-for-location-based-answers",
-                  "ai-front-desk/knowledge-base/knowledge-source-types",
-                  "ai-front-desk/knowledge-base/getting-to-know-the-new-knowledge-base"
-                ]
-              },
-              {
-                "group": "Chat and search widgets",
-                "pages": [
-                  "ai-front-desk/chat-and-search-widgets/publish-the-widget-to-your-website"
-                ]
-              },
-              {
-                "group": "Phone and voice",
-                "pages": [
-                  "ai-front-desk/phone-and-voice/transfer-lines-and-after-hours-routing",
-                  "ai-front-desk/phone-and-voice/set-up-an-ai-phone-line",
-                  "ai-front-desk/phone-and-voice/set-up-holiday-and-after-hours-routing-for-ai-voice"
-                ]
-              },
-              {
-                "group": "Monitoring",
-                "pages": [
-                  "ai-front-desk/monitoring/how-to-export-your-ai-analytics-data",
-                  "ai-front-desk/monitoring/review-interaction-logs",
-                  "ai-front-desk/monitoring/reveal-redacted-personal-information-in-a-log",
-                  "ai-front-desk/monitoring/analytics-dashboards-and-reports"
-                ]
-              }
+              "working-in-polimorphic/mass-communications/send-an-email-or-sms-to-many-residents",
+              "working-in-polimorphic/mass-communications/why-a-recipient-didn-t-receive-a-message"
             ]
           },
           {
-            "group": "Building workflows",
-            "icon": "diagram-project",
+            "group": "Organization and Account Settings",
             "pages": [
-              "building-workflows/how-workflows-work-steps-forms-and-publishing",
-              "building-workflows/create-a-workflow-build-a-permit-renewal-from-start-to-finish",
-              "building-workflows/build-a-form-with-conditional-fields",
-              "building-workflows/add-a-payment-step",
-              "building-workflows/route-work-with-assignment-and-communication-steps",
-              "building-workflows/publish-a-new-version-of-a-workflow",
-              "building-workflows/workflow-block-types"
+              "working-in-polimorphic/organization-and-account-settings/how-to-download-account-information"
             ]
           },
           {
-            "group": "Administration",
-            "icon": "user-gear",
+            "group": "Workflows",
             "pages": [
-              "administration/invite-staff-and-manage-accounts",
-              "administration/roles-and-permissions",
-              "administration/roles-and-permissions-matrix",
-              "administration/set-up-single-sign-on-saml-or-microsoft-entra-id",
-              "administration/organization-settings-and-tags",
-              "administration/send-email-from-your-own-domain"
+              "working-in-polimorphic/workflows/how-to-give-someone-direct-access-to-cases",
+              "working-in-polimorphic/workflows/how-to-build-branching-paths-in-a-workflow",
+              "working-in-polimorphic/workflows/how-to-choose-how-residents-verify-themselves-before-starting-a-workflow"
             ]
           },
           {
-            "group": "Integrations",
-            "icon": "plug",
+            "group": "Contacts and Communication",
             "pages": [
-              "integrations/get-started-with-integrations",
-              "integrations/integration-connection-fields",
-              "integrations/set-up-a-hosted-integration",
-              "integrations/connect-catalis-request311",
-              "integrations/connect-cayenta-utility-billing",
-              "integrations/connect-tyler-munis-arws",
-              "integrations/connect-tyler-energov-epl",
-              "integrations/connect-opengov-eam",
-              "integrations/connect-cityworks",
-              "integrations/connect-fasttrack",
-              "integrations/create-a-custom-api-integration",
-              "integrations/test-and-troubleshoot-an-integration",
-              "integrations/manage-integration-access-across-polimorphic"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "icon": "wrench",
-            "pages": [
-              {
-                "group": "Troubleshooting",
-                "pages": [
-                  "troubleshooting/troubleshooting/i-don-t-see-a-feature-or-button",
-                  "troubleshooting/troubleshooting/the-ai-gave-a-wrong-or-outdated-answer",
-                  "troubleshooting/troubleshooting/a-staff-member-can-t-log-in",
-                  "troubleshooting/troubleshooting/a-workflow-step-isn-t-moving-forward"
-                ]
-              },
-              {
-                "group": "Engage with Polimorphic",
-                "pages": [
-                  "troubleshooting/engage-with-polimorphic/how-do-i-request-a-feature",
-                  "troubleshooting/engage-with-polimorphic/i-found-a-bug-how-do-i-get-it-fixed",
-                  "troubleshooting/engage-with-polimorphic/contact-general-support"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Security, privacy & compliance",
-            "icon": "shield-check",
-            "pages": [
-              "security-privacy-and-compliance/data-security-and-personal-information-handling",
-              "security-privacy-and-compliance/data-retention-and-interaction-log-expiry",
-              "security-privacy-and-compliance/accessibility",
-              "security-privacy-and-compliance/security-and-procurement-faq",
-              "security-privacy-and-compliance/polimorphic-trust-center"
+              "working-in-polimorphic/contacts-and-communication/how-to-update-a-contact",
+              "working-in-polimorphic/contacts-and-communication/capturing-replies-to-emails",
+              "working-in-polimorphic/contacts-and-communication/how-replies-to-case-emails-reach-your-team"
             ]
           }
         ]
       },
       {
-        "tab": "Changelog",
-        "icon": "sparkles",
+        "group": "AI Front Desk",
+        "icon": "message-bot",
         "pages": [
-          "changelog"
+          {
+            "group": "How the AI answers",
+            "pages": [
+              "ai-front-desk/how-the-ai-answers/how-the-ai-finds-and-writes-answers",
+              "ai-front-desk/how-the-ai-answers/test-the-ai-before-go-live",
+              "ai-front-desk/how-the-ai-answers/improve-a-wrong-or-weak-answer"
+            ]
+          },
+          {
+            "group": "Knowledge base",
+            "pages": [
+              "ai-front-desk/knowledge-base/knowledge-base-sources",
+              "ai-front-desk/knowledge-base/add-documents-links-and-faqs",
+              "ai-front-desk/knowledge-base/crawl-your-website-and-set-a-refresh-cadence",
+              "ai-front-desk/knowledge-base/add-gis-layers-for-location-based-answers",
+              "ai-front-desk/knowledge-base/knowledge-source-types",
+              "ai-front-desk/knowledge-base/getting-to-know-the-new-knowledge-base"
+            ]
+          },
+          {
+            "group": "Chat and search widgets",
+            "pages": [
+              "ai-front-desk/chat-and-search-widgets/publish-the-widget-to-your-website"
+            ]
+          },
+          {
+            "group": "Phone and voice",
+            "pages": [
+              "ai-front-desk/phone-and-voice/transfer-lines-and-after-hours-routing",
+              "ai-front-desk/phone-and-voice/set-up-an-ai-phone-line",
+              "ai-front-desk/phone-and-voice/set-up-holiday-and-after-hours-routing-for-ai-voice"
+            ]
+          },
+          {
+            "group": "Monitoring",
+            "pages": [
+              "ai-front-desk/monitoring/how-to-export-your-ai-analytics-data",
+              "ai-front-desk/monitoring/review-interaction-logs",
+              "ai-front-desk/monitoring/reveal-redacted-personal-information-in-a-log",
+              "ai-front-desk/monitoring/analytics-dashboards-and-reports"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Building workflows",
+        "icon": "diagram-project",
+        "pages": [
+          "building-workflows/how-workflows-work-steps-forms-and-publishing",
+          "building-workflows/create-a-workflow-build-a-permit-renewal-from-start-to-finish",
+          "building-workflows/build-a-form-with-conditional-fields",
+          "building-workflows/add-a-payment-step",
+          "building-workflows/route-work-with-assignment-and-communication-steps",
+          "building-workflows/publish-a-new-version-of-a-workflow",
+          "building-workflows/workflow-block-types"
+        ]
+      },
+      {
+        "group": "Administration",
+        "icon": "user-gear",
+        "pages": [
+          "administration/invite-staff-and-manage-accounts",
+          "administration/roles-and-permissions",
+          "administration/roles-and-permissions-matrix",
+          "administration/set-up-single-sign-on-saml-or-microsoft-entra-id",
+          "administration/organization-settings-and-tags",
+          "administration/send-email-from-your-own-domain"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "icon": "plug",
+        "pages": [
+          "integrations/get-started-with-integrations",
+          "integrations/integration-connection-fields",
+          "integrations/set-up-a-hosted-integration",
+          "integrations/connect-catalis-request311",
+          "integrations/connect-cayenta-utility-billing",
+          "integrations/connect-tyler-munis-arws",
+          "integrations/connect-tyler-energov-epl",
+          "integrations/connect-opengov-eam",
+          "integrations/connect-cityworks",
+          "integrations/connect-fasttrack",
+          "integrations/create-a-custom-api-integration",
+          "integrations/test-and-troubleshoot-an-integration",
+          "integrations/manage-integration-access-across-polimorphic"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "icon": "wrench",
+        "pages": [
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/troubleshooting/i-don-t-see-a-feature-or-button",
+              "troubleshooting/troubleshooting/the-ai-gave-a-wrong-or-outdated-answer",
+              "troubleshooting/troubleshooting/a-staff-member-can-t-log-in",
+              "troubleshooting/troubleshooting/a-workflow-step-isn-t-moving-forward"
+            ]
+          },
+          {
+            "group": "Engage with Polimorphic",
+            "pages": [
+              "troubleshooting/engage-with-polimorphic/how-do-i-request-a-feature",
+              "troubleshooting/engage-with-polimorphic/i-found-a-bug-how-do-i-get-it-fixed",
+              "troubleshooting/engage-with-polimorphic/contact-general-support"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Security, privacy & compliance",
+        "icon": "shield-check",
+        "pages": [
+          "security-privacy-and-compliance/data-security-and-personal-information-handling",
+          "security-privacy-and-compliance/data-retention-and-interaction-log-expiry",
+          "security-privacy-and-compliance/accessibility",
+          "security-privacy-and-compliance/security-and-procurement-faq",
+          "security-privacy-and-compliance/polimorphic-trust-center"
         ]
       }
     ]
