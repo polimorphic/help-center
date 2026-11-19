@@ -160,17 +160,18 @@
               "ai-front-desk/monitoring/reveal-redacted-personal-information-in-a-log",
               "ai-front-desk/monitoring/analytics-dashboards-and-reports"
             ]
-          },
-          {
-            "group": "Assistant",
-            "pages": [
-              "ai-front-desk/assistant/what-is-the-assistant",
-              "ai-front-desk/assistant/start-and-continue-a-chat",
-              "ai-front-desk/assistant/dictate-a-message-to-the-assistant",
-              "ai-front-desk/assistant/create-charts-tables-and-documents",
-              "ai-front-desk/assistant/build-a-powerpoint-deck"
-            ]
           }
+        ]
+      },
+      {
+        "group": "Assistant",
+        "icon": "sparkles",
+        "pages": [
+          "assistant/what-is-the-assistant",
+          "assistant/start-and-continue-a-chat",
+          "assistant/dictate-a-message-to-the-assistant",
+          "assistant/create-charts-tables-and-documents",
+          "assistant/build-a-powerpoint-deck"
         ]
       },
       {
