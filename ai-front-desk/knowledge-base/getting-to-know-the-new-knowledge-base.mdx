@@ -78,6 +78,19 @@ Usage is a quick way to find the sources doing the most work, and the ones your 
 
 If you're inside a folder when you add a source, the new source is added to that folder.
 
+<Info>
+**FAQs are now called "Text"**
+
+What used to be called an **FAQ** source is now labeled **Text** throughout the Knowledge Base. Nothing about how these sources work has changed; this is a rename only. Your existing FAQs are still there. They just appear as "Text" in the list, filters, and dialogs.
+
+A few things to know:
+
+- **Same structure, new labels.** Each Text source is still a topic/content pair (previously question/answer). You can add them one at a time with **Add source** > **Text**, or in bulk with **Text CSV upload**. The CSV accepts either Topic and Content or Question and Answer column headers.
+- **Text takes priority.** When a Text source conflicts with a link or document, your AI uses the Text. This makes Text the right place for authoritative answers, policy clarifications, or corrections to what's on your website.
+- **Availability still applies.** Like other sources, Text can be set to **Everyone** (answers residents on chat, voice, and search) or **Staff only** (internal tools only).
+- **Text can be filed in folders** alongside links and documents, and can be edited or deleted from the row actions menu (**Edit Text** or **Delete Text**).
+</Info>
+
 To add pages from a whole website, contact your Customer Success Manager or email support@polimorphic.com and the team will add the domain for you.
 
 ![Add source menu with Link, Document, Text, and Text CSV upload options](/images/articles/58738350343451.png)
@@ -108,6 +121,21 @@ Folders keep related sources together, for example everything for one department
 - To rename or delete a folder, use the three-dot menu on the folder's row. Deleting a folder doesn't delete its sources; they just stop being in that folder.
 
 Folders can't be placed inside other folders.
+
+<Info>
+**What folders are, and aren't**
+
+Folders are a manual organization tool only. They help you group and filter sources in the Knowledge Base list, but they don't change how your AI uses those sources. A source in a folder is searched exactly the same as an unfiled one.
+
+A few things to know:
+
+- **There are no automatic folder rules.** New sources aren't pulled into folders based on their URL, domain, content, or any other criteria. Unless you choose a folder when adding them, new sources land in the main list as unfiled.
+- **Adding while inside a folder files the new sources there.** If you open a folder and use **Add source** (links, uploaded documents, and so on), the new sources are placed directly into that folder. This is the only "automatic" filing that happens. It applies at the moment you add the source, not to anything discovered later.
+- **Re-scraping or re-crawling doesn't move sources.** Refreshing a source keeps it in whatever folder it's already in; it won't be unfiled or re-filed on its own.
+- **Folders don't nest**, and deleting a folder never deletes its sources. They just become unfiled again.
+
+Common use cases: grouping sources by department or topic (for example, "Permits" or "Meeting minutes") so your team can find and review them faster, staging a set of sources you plan to edit or archive together, or separating uploaded documents from crawled web pages.
+</Info>
 
 ![Inside a folder with the Folder filter chip and breadcrumb](/images/articles/58738350361115.png)
 
@@ -151,3 +179,11 @@ Archived sources stay in your Knowledge Base and can be restored at any time. De
 ## Who can see what
 
 Anyone with access to the Knowledge Base can browse and search sources and see the Health check card. The Connected tools card, and the options to add, edit, organize, or archive sources, only show for staff who can edit the Knowledge Base. Deleting Text also requires permission to delete. If you need that access, ask an administrator in your organization.
+
+## Related articles
+
+- [Knowledge base sources](/ai-front-desk/knowledge-base/knowledge-base-sources)
+- [Knowledge source types](/ai-front-desk/knowledge-base/knowledge-source-types)
+- [Add documents, links, and FAQs](/ai-front-desk/knowledge-base/add-documents-links-and-faqs)
+- [Crawl your website and set a refresh cadence](/ai-front-desk/knowledge-base/crawl-your-website-and-set-a-refresh-cadence)
+- [Add GIS layers for location-based answers](/ai-front-desk/knowledge-base/add-gis-layers-for-location-based-answers)
