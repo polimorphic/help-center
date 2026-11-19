@@ -141,6 +141,7 @@
           {
             "group": "Chat and search widgets",
             "pages": [
+              "ai-front-desk/chat-and-search-widgets/customize-the-chat-and-search-widgets",
               "ai-front-desk/chat-and-search-widgets/publish-the-widget-to-your-website"
             ]
           },
