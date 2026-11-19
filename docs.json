@@ -141,6 +141,7 @@
           {
             "group": "Chat and search widgets",
             "pages": [
+              "ai-front-desk/chat-and-search-widgets/customize-the-chat-and-search-widgets",
               "ai-front-desk/chat-and-search-widgets/publish-the-widget-to-your-website"
             ]
           },
@@ -161,6 +162,18 @@
               "ai-front-desk/monitoring/analytics-dashboards-and-reports"
             ]
           }
+        ]
+      },
+      {
+        "group": "Assistant",
+        "icon": "sparkles",
+        "pages": [
+          "assistant/what-is-the-assistant",
+          "assistant/what-the-assistant-can-look-up",
+          "assistant/start-and-continue-a-chat",
+          "assistant/dictate-a-message-to-the-assistant",
+          "assistant/create-charts-tables-and-documents",
+          "assistant/build-a-powerpoint-deck"
         ]
       },
       {
