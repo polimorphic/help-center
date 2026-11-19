@@ -5,6 +5,82 @@ rss: true
 icon: "sparkles"
 ---
 
+<Update label="November 15, 2026" description="Release notes">
+
+### New features
+
+**Outbound communications**
+
+- **One-time recipient lists** let staff send an email or SMS to an uploaded CSV or pasted list without importing and tagging everyone first. Staff can review the list and optionally add new people to the contact book when the message is sent.
+
+**AI chat**
+
+- **Written feedback from residents** can now be collected after a thumbs-down rating in live chat. Turn on Enable Feedback Collection in Chat Settings on the Customize page; it is off by default.
+
+### Improvements
+
+**Maps and addresses**
+
+- **Address entry** now brings address search and pin placement together on one map, followed by an address confirmation step. Residents and staff can search for a place or drag the pin to choose a location.
+- **The location map in AI chat** now has a satellite view, making it easier to mark a precise spot, such as a backyard or part of a property.
+
+**Workflows**
+
+- **AI descriptions for workflows** can now be edited in Workflow Settings when Polimorphic AI is turned on. Staff can explain when the AI should suggest the workflow, and turning the setting off and back on keeps the saved description.
+
+**Integrations**
+
+- **Request311 submissions** no longer require a location when the request type says it is optional. The AI asks for one when it is required or the requirement is unknown.
+
+### Fixes
+
+- **Signatures** no longer disappear when a form fails validation. When outdated-signature checking is on, changed form data prompts the person to clear and re-sign instead. New signature steps now have this check on by default.
+- **The cases table** now shows rows as soon as they are ready, without waiting for the total count, pinned fields, and progress details to finish loading.
+- **Links written into FAQs** now stay clickable in AI answers when the FAQ is used as a source, instead of being stripped to plain text.
+- **Chat embeds on CivicPlus websites** have an optional Fix Scroll Jitter (CivicPlus) switch to help with choppy page scrolling. Turn it on before copying and replacing the embed code; existing embeds are unchanged.
+
+</Update>
+
+<Update label="November 8, 2026" description="Release notes">
+
+### New features
+
+**AI email**
+
+- **Forward without replying** lets staff route incoming AI emails to a department or staff address without sending an AI reply to the resident. Set forwarding rules and a default address; forwarded messages include a summary and the original email.
+
+### Improvements
+
+**Cases**
+
+- **Manage access** on a case now separates Invite case member from Share with staff member. Use the first for residents and other participants, and the second to grant staff direct access.
+- **Step assignees who don't have staff permissions** are now added as case members, so residents can work on their steps without being treated as staff.
+- **Case PDF downloads** now include a receipt page for each completed payment on a bill step, including payments made toward a partly paid bill.
+
+**Settings**
+
+- **Integrations** is now searchable from the command palette for staff with access to organization settings. Search by Integrations or by a supported system's name to open the page.
+
+### Fixes
+
+**Sign-in**
+
+- **Microsoft Entra single sign-on** now prefers the email address supplied by the identity provider over its account identifier, so accounts match the right email.
+- **Linking an existing account through single sign-on** now requires an email on the configured SSO domains and existing membership in the configuration's workspace.
+
+**Chat and forms**
+
+- **Full-screen chat on phones** now fits the visible screen when browser toolbars are open, keeping the message box from being cut off. Copy and replace the chat embed code to apply the fix to an existing website.
+- **Website links added in rich text** now get an https:// prefix when no protocol is entered, so a link such as www.example.gov opens the website instead of a path inside Polimorphic. Existing saved links are unchanged.
+- **Addresses with missing fields** no longer show stray commas and extra spaces in formatted displays. Existing case activity entries are unchanged.
+
+**Contacts and accessibility**
+
+- **Creating a contact** now opens the new contact's page instead of returning staff to the Contacts table.
+- **Screen readers** now announce staff notification toasts and identify the signature pad with its drawing instructions.
+
+</Update>
+
 <Update label="November 1, 2026" description="Release notes">
 
 ### Improvements
@@ -73,7 +149,7 @@ icon: "sparkles"
 
 - **AI chat, search, and the AI assistant** now show the steps the AI is working through while it prepares an answer.
 - **AI search** now uses the updated search bar and results layout for every organization.
-- **AI answers** no longer draw on unrelated content when no relevant source is found. The AI now tells residents it couldn't find an answer instead.
+- **AI answers** have a fix for a source-selection fallback that could pass unrelated search results along even when no sources were selected. These answers can now say they couldn't find an answer instead.
 
 **AI analytics**
 
@@ -154,7 +230,7 @@ icon: "sparkles"
 
 **AI assistant**
 
-- **Source citations** in AI answers now list only the sources that directly support the response. Sources without a page title now show a readable name instead of a raw link.
+- **Source citations** in AI answers have tighter selection to favor sources that directly support the response. Links included in the answer are also cited, and sources without a page title show a readable name instead of a raw link.
 - **Internal sources** are now used only in the internal AI assistant for staff with Knowledge Base read access. Chat and search return the same public answers to everyone, including logged-in staff.
 - **AI interaction log** now includes email interactions in its default view alongside search, chat, voice, SMS, and WhatsApp.
 
@@ -165,7 +241,7 @@ icon: "sparkles"
 
 **Workflows**
 
-- **Communication steps** can now send from any email address on your organization's verified domains, not just the default sender.
+- **Communication steps** can now send from any saved organization email address on a verified domain, rather than only the primary organization address.
 - **Add-an-item tables** in forms now show each field's description through a help icon in the column header, so residents know what to enter.
 - **Checkbox questions in add-an-item tables** now appear as a multiselect column, so the table no longer switches to card view.
 
