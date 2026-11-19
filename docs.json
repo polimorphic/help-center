@@ -23,7 +23,7 @@
     "links": [
       {
         "label": "Contact support",
-        "href": "https://polimorphicsupport.zendesk.com/hc/en-us/requests/new"
+        "href": "mailto:support@polimorphic.com"
       }
     ],
     "primary": {
@@ -254,7 +254,7 @@
           },
           {
             "label": "Contact support",
-            "href": "https://polimorphicsupport.zendesk.com/hc/en-us/requests/new"
+            "href": "mailto:support@polimorphic.com"
           }
         ]
       },
