@@ -5,6 +5,114 @@ rss: true
 icon: "sparkles"
 ---
 
+<Update label="November 15, 2026" description="Release notes">
+
+### New features
+
+- **Resident feedback on AI chat** can now be collected in your live chat. Turn on Enable feedback collection under Chat settings on the Customize page. Residents who give a response a thumbs down can then tell your team what went wrong.
+- **PowerPoint presentations** can now be created by the staff Assistant. Ask for a deck and the Assistant builds the slides, including a title slide, bullet points, tables, charts, and speaker notes.
+
+### Improvements
+
+**AI assistant**
+
+- **AI chat replies** now appear below the resident's question, which stays pinned at the top of the chat window. The page no longer jumps while the answer is written, so residents can read and scroll freely.
+- **AI search** now takes today's date and how recently a page was published into account, so searches for current or upcoming events surface the latest information.
+- **Workflow AI descriptions** can now be edited in the workflow editor. Turn on Polimorphic AI in Workflow settings to see the AI description field, which helps the AI point residents to the right workflow.
+
+**Maps and GIS**
+
+- **The address picker** has a new map-first design. Residents and staff can search for an address, click the map or drag the pin, and switch to satellite view. The picker also warns when a location is outside your service area.
+- **Satellite view** is now available on the location map residents use in AI chat, so they can pin precise spots such as a backyard.
+- **Area targeting in Outbound Communication** is quicker to set up. The polygon tool is ready as soon as you open the Polygon tab. You can also drag a circle's center to move it and search for an address or neighborhood to jump the map there.
+- **The GIS layers page** in Settings now loads much faster.
+
+**Integrations**
+
+- **SharePoint connections** can now be limited to one site. Add a selected site URL when you set up the connection, and the AI only searches and reads documents from that site.
+
+**Cases**
+
+- **The resident portal** now lists public workflows from every department in your workspace. Each card shows which department owns the workflow.
+- **Signatures on forms** are no longer cleared automatically. If a form changes after it's signed, the signature is marked outdated and the form can't be submitted until the signer clears it and signs again.
+- **Case tables** load faster. Rows appear right away, and the total count fills in once it's ready.
+
+**Accessibility**
+
+- **Screen reader support** is better in AI search and file uploads. Attached file names are read aloud, the "What went wrong?" feedback form is announced when it opens, and each form label points to the right field.
+
+### Fixes
+
+**AI assistant**
+
+- **Links in FAQ answers** now stay in AI responses. Before, links added to an FAQ as formatted text could be removed, leaving only the link text.
+
+**Integrations**
+
+- **SharePoint links in AI answers** now work for documents with spaces in their names. The Microsoft sign-in window also closes on its own after you sign in.
+- **Request311 requests made through AI** now ask residents for a location only when the request type needs one.
+
+**Maps and GIS**
+
+- **Addresses typed into the address picker** now save at the matching spot on the map. Before, an address typed without picking a suggestion could be saved at a placeholder location.
+
+</Update>
+
+<Update label="November 8, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **The staff Assistant** is now available to every customer, with no chat limits based on your plan.
+
+**AI email**
+
+- **AI email forwarding rules** let your team choose where unresolved emails go. Staff can add an address for each type of request, set a default forwarding address, and edit these settings any time from the AI email list.
+- **Forward-only AI email addresses** send incoming messages straight to staff with a short summary and a suggested next step. Residents don't get an AI reply from these addresses.
+- **General intake cases for AI email** can be turned on for any AI email address. When the AI forwards an email it can't resolve, it opens a case and links the resident to it so they can add contact details.
+
+**Cases**
+
+- **Printed cases** now include a receipt page for each payment on a bill step, so a printed case shows that a bill was paid.
+
+### Improvements
+
+**AI assistant**
+
+- **AI answers by text message and email** now use the same multi-step research as web chat, so residents get the same answer quality on every channel.
+- **Assistant replies keep going** when you leave a chat and come back. Your question is saved right away, and if a reply can't finish, the chat shows "Connection lost" so you know to try again.
+- **Redacted text in Assistant chats** now appears as black boxes, matching the AI interaction log. Staff can click a box to reveal the text in their own chat.
+
+**Cases**
+
+- **Case sharing** now offers two separate options: "Invite case member" for applicants and other outside participants, and "Share with staff member" for staff access.
+- **Step assignees who aren't staff**, such as a contact from an earlier step, are now added as case members instead of getting staff access to the case.
+- **AI pre-review** runs now appear in the case activity feed, showing whether the AI flagged any issues on a form.
+- **The assign case prompt** now picks an assignee for a form step when that step starts, using the information collected in the case so far.
+
+**Accessibility**
+
+- **Screen reader support** is better across the app. The sidebar has clear focus states and labels, pop-up notifications are read aloud, and the signature box on forms is announced.
+
+### Fixes
+
+**Workflows**
+
+- **Percent within SLA** on the SLAs tab now counts every step finished within its SLA. Before, it often showed 0%.
+- **Conditional form sections** now hide correctly when the section they depend on is hidden.
+
+**Cases**
+
+- **Case requesters** now stay in place after you change them, including after a page reload.
+- **File downloads** work again for organizations whose networks or browsers only allow older security settings.
+
+**AI chat**
+
+- **The embedded chat on mobile** is no longer cut off by the browser toolbar, so residents can always see the message box.
+
+</Update>
+
 <Update label="November 1, 2026" description="Release notes">
 
 ### Improvements
