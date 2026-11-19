@@ -94,7 +94,8 @@
           {
             "group": "Organization and Account Settings",
             "pages": [
-              "working-in-polimorphic/organization-and-account-settings/how-to-download-account-information"
+              "working-in-polimorphic/organization-and-account-settings/how-to-download-account-information",
+              "working-in-polimorphic/organization-and-account-settings/manage-your-account-settings"
             ]
           },
           {
@@ -110,7 +111,8 @@
             "pages": [
               "working-in-polimorphic/contacts-and-communication/how-to-update-a-contact",
               "working-in-polimorphic/contacts-and-communication/capturing-replies-to-emails",
-              "working-in-polimorphic/contacts-and-communication/how-replies-to-case-emails-reach-your-team"
+              "working-in-polimorphic/contacts-and-communication/how-replies-to-case-emails-reach-your-team",
+              "working-in-polimorphic/contacts-and-communication/use-polimorphic-in-outlook"
             ]
           }
         ]
@@ -196,8 +198,10 @@
           "administration/invite-staff-and-manage-accounts",
           "administration/roles-and-permissions",
           "administration/roles-and-permissions-matrix",
+          "administration/create-and-edit-groups-and-roles",
           "administration/set-up-single-sign-on-saml-or-microsoft-entra-id",
           "administration/organization-settings-and-tags",
+          "administration/create-and-use-form-letters",
           "administration/send-email-from-your-own-domain"
         ]
       },
