@@ -1,0 +1,47 @@
+---
+title: "Build a form with conditional fields"
+---
+
+Long forms with questions that don't apply are where applicants give up. You can keep a form short by showing some questions only when an earlier answer calls for them, so each applicant sees just what's relevant to them.
+
+## Before you begin
+
+- Work in a draft of the [workflow](/getting-started/glossary). Live workflows can't be fully edited. See [Publish a new version of a workflow](/building-workflows/publish-a-new-version-of-a-workflow).
+- Plan which answer should reveal which questions. For example, "Are you changing your seating layout?" Yes shows "Upload your new seating plan."
+
+## Add questions
+
+1. Open the workflow and select **Edit Workflow**.
+2. Select the **Complete Form** step you'd like to change.
+3. Add a section, and enter a **Section Name**, such as *Seating*.
+4. Drag a question type, such as text, checkbox, date, address, or file, into the section.
+5. Enter the question in **Label**.
+6. For choice questions, add each answer under **Options**.
+7. Turn on **Required** if the applicant has to answer.
+
+The questions show in the section as you add them.
+
+## Show a question only when it applies
+
+1. Put the questions that should appear later in their own section, such as *New seating plan*.
+2. Select that section.
+3. Select **Add conditional rule**.
+4. Build the rule so the section shows when the earlier answer matches. For example: if *Are you changing your seating layout?* is Yes.
+5. Save the rule.
+
+Put conditional questions in the section that has the rule. A question placed in a different section ignores the rule and always shows.
+
+## Split a long form into pages
+
+1. Drag a **Page Break** between two sections.
+2. Select **Preview** to check where each page starts.
+
+In **Preview**, the form shows the conditional section only after you pick the matching answer.
+
+**Tip:** Run through the form once with a test [case](/getting-started/glossary) before you publish, trying each answer that reveals a section.
+
+## Related articles
+
+- [How workflows work: steps, forms, and publishing](/building-workflows/how-workflows-work-steps-forms-and-publishing)
+- [Create a workflow: build a permit renewal from start to finish](/building-workflows/create-a-workflow-build-a-permit-renewal-from-start-to-finish)
+- [A resident's form won't submit or a file won't upload](https://polimorphicsupport.zendesk.com/hc/en-us/articles/56918328261147-A-resident-s-form-won-t-submit-or-a-file-won-t-upload)

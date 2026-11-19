@@ -1,0 +1,55 @@
+---
+title: "A workflow step isn't moving forward"
+---
+
+When a [case](/getting-started/glossary) seems stuck and the next step won't open, the [workflow](/getting-started/glossary) is usually waiting for something on purpose. Here's how to figure out what it's waiting for.
+
+## The step is assigned to someone else, or you can't edit the case
+
+You may see the step but not be able to complete it, or the case may open as read-only.
+
+**Fix:** Check who the step is assigned to, and check in with them or your administrator.
+
+## The step is waiting for the resident
+
+A **Public facing (external)** step waits for the resident, and nothing happens until they finish it.
+
+**Fix:** Send the resident the case link or a reminder from the case.
+
+## The bill isn't paid
+
+Steps after a **Collect Payment** step wait until the bill is paid. Documents that depend on the payment stay grayed out.
+
+**Fix:** Check the bill on the case. Take the payment for the resident, or send them a reminder to pay. Once it's paid, the next step opens.
+
+## The step waits for more than one earlier step
+
+When several arrows lead into a step, it can be set to wait for all of them.
+
+**Fix:** Find the earlier steps that are still open and finish them. The step opens once they're all done.
+
+## A condition isn't met
+
+A step with a condition runs only when its rule is true, such as "applicant type is Business."
+
+**Fix:** Check the answers on the case. To read the rule, select **View condition** on the arrow in the editor, or ask the workflow owner.
+
+## A message step is waiting for review
+
+A **Send Message** step set to **Manual** waits for staff to review and send it. It won't send if the sender, recipient, or subject is missing.
+
+**Fix:** Open the step, fill in what's missing, and send. The workflow moves on once the message goes out.
+
+## The case is archived or closed
+
+**Fix:** Check the [case status](/getting-started/glossary). Reopen it if work should continue.
+
+## When to contact support
+
+If every earlier step is done, every condition is met, and the step still won't open, contact support. Include the workflow name, the case, the step name, and when it should have opened.
+
+## Related articles
+
+- [How workflows work](/building-workflows/how-workflows-work-steps-forms-and-publishing)
+- [Route work with assignments and communication steps](/building-workflows/route-work-with-assignment-and-communication-steps)
+- [Case statuses and the documentation center](/working-in-polimorphic/cases/case-statuses-and-the-document-center)

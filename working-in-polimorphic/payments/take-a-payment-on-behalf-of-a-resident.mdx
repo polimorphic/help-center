@@ -1,0 +1,83 @@
+---
+title: "Take a payment on behalf of a resident"
+---
+
+Not every resident pays online. When someone calls in or stops by the front counter to pay a renewal fee, you can take the payment for them in Polimorphic so it's recorded alongside everything else.
+
+## Before you begin
+
+- The bill needs to exist already. Bills are created by a [workflow](/getting-started/glossary) payment step or added to a payment type.
+- Have something that identifies the bill, such as the account number, bill name, or bill description.
+- To take a card in person, your office needs a card reader that Polimorphic has set up.
+
+## Start a payment
+
+You can start from the Payments page or from a [case](/getting-started/glossary).
+
+- **From Payments:** select **Payments** in the left menu, open the payment type on the **Payment Types** tab, and select **Take Payment**. The payment screen opens in a new tab.
+- **From a case:** find the payment task in the case's tasks area and select **Take Payment**.
+
+The payment screen has three stages: **Find Payment**, **Select Payer**, and **Process Payment**. If you start from a case, the bill is already selected.
+
+## Find the bill
+
+1. In **Select Payment Type**, select the type of bill, such as *Water Utility*.
+2. Enter what you know in **Search by ID Number**, **Search by Bill Name**, or **Search by Bill Description**.
+3. Select **Find Payment**.
+4. Under **Search Results**, select the bill that matches.
+5. Select **Next**.
+
+If the wrong bills come back, select **Search Again** and try a different value.
+
+## Pick who's paying
+
+1. Search your [contacts](/getting-started/glossary) for the person paying.
+2. Select their name. If they aren't a contact yet, select **Add contact** and enter their details.
+3. Select **Next**.
+
+## Collect the payment
+
+Check the charges and the total with the resident before you collect anything. Then pick one option.
+
+### Take a card payment
+
+1. Select **Take Card Payment**.
+2. Pick **Credit Card** or **ACH / E-Check**.
+3. Enter the card or bank details the resident gives you.
+4. Submit the payment.
+
+If your office has a card reader, pick **Reader** instead, select the reader, and select **Send Payment to Reader**. Ask the resident to tap or insert their card. The screen shows **Waiting for Payment** until the reader responds.
+
+### Record a payment you already received
+
+Use this for cash, a check, a money order, or a card or bank payment made outside Polimorphic.
+
+1. Select **Record Payment**.
+2. Pick **Cash**, **Check**, **Money Order**, **Credit Card**, or **eCheck / ACH**.
+3. Confirm the payment.
+
+### Waive the bill
+
+1. Select **Waive**.
+
+The bill shows as **Waived**. If you waive a bill by mistake, select **Unwaive**.
+
+### Send the bill to the resident
+
+1. Select **Send Bill**.
+2. In **Email payment link**, enter the resident's email address.
+3. Select **Send**.
+
+The resident gets a link to pay online. The link works for three days.
+
+## What happens after a payment
+
+A completed payment shows a confirmation and a receipt. The payment appears on the **Transactions** tab. If the bill belongs to a case, the payment, waiver, or recorded payment also appears in the case's activity, with the amount and who did it.
+
+A bank (ACH) payment entered by hand can show as processing until the bank account is verified.
+
+## Related articles
+
+- [Create and bulk-upload bills](/working-in-polimorphic/payments/create-and-bulk-upload-bills)
+- [Add a payment step](/building-workflows/add-a-payment-step)
+- [How to connect your Stripe account to accept payments](/working-in-polimorphic/payments/how-to-connect-your-stripe-account-to-accept-payments)

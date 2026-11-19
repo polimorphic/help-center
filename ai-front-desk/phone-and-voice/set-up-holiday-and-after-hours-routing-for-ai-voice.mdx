@@ -1,0 +1,87 @@
+---
+title: "Set up holiday and after-hours routing for AI Voice"
+---
+
+Holidays are when residents are most likely to call an office that's closed. A few minutes of setup ahead of time means the AI greets them with the right message and sends anyone who needs a person to a number that's actually staffed. This article covers holiday schedules, regular after-hours schedules, and what the AI does when no one is available.
+
+Phone line schedules are on the phone line itself, under **Settings**, then **Channels**, then **Voice**. Transfer lines are on the **Transfer Lines** page in **Settings**, under **General**.
+
+## How the pieces fit together
+
+Three settings decide what a caller hears and where they're sent:
+
+- **The phone line's defaults.** The default greeting message and **Default Transfer Line** you set when you created the phone line. These apply whenever no schedule does.
+- **Phone line schedules.** On the phone line's **Schedule** step, **Time-Based** and **Holiday-Based** configurations swap in a different greeting and default transfer line at set times.
+- **Transfer line hours.** Each transfer line can have its own hours and an alternate number to use outside them.
+
+On a day that has both a holiday and a time-based schedule, the holiday wins.
+
+## Set up a holiday
+
+1. Open the phone line and go to the **Schedule** step.
+2. Select the **Holiday-Based** tab, then **Add Holiday**.
+3. Enter a **Holiday Name**, such as *Thanksgiving*.
+4. Pick the dates on the calendar. You can pick more than one, such as Thanksgiving and the day after.
+5. Write a **Greeting Message** that says the office is closed and when it reopens. For example: *"Town Hall is closed for Thanksgiving and reopens Monday at 8 AM. I can still help with most questions."*
+6. Enter a **Default Transfer Line** for callers who need a person, such as your on-call or emergency line.
+7. Leave **Apply to all transfer lines** checked. That way the AI knows about the holiday and its transfer number whenever it looks at any of your transfer lines, not just the phone line's default.
+8. Select **Update Phone Line** (or **Save Phone Line** for a new line).
+
+On the dates you picked, callers hear the holiday greeting all day, and the AI uses the holiday's transfer number as its default.
+
+Holiday dates are specific calendar dates, so they don't repeat on their own. Add next year's dates when you plan for the next holiday season. The calendar on the **Holiday-Based** tab shows every holiday date you've already added.
+
+## Set up weeknight and weekend hours
+
+For closures that repeat every week, use a time-based schedule instead.
+
+1. On the phone line's **Schedule** step, select the **Time-Based** tab, then **Add Configuration**.
+2. Fill in **Configuration Name**, **Days of Week**, **Start Time**, **End Time**, and **Timezone**.
+3. Write a **Greeting Message** and choose a **Default Transfer Line** for those hours.
+4. Save the phone line.
+
+For example, weeknights 5 PM to 8 AM: *"Town Hall is closed. I can still help with most questions."* A start time later than the end time runs overnight.
+
+When two time-based schedules overlap, the one higher in the list applies. Use the arrows to change the order.
+
+## Send a transfer line to an after-hours number
+
+A time-based configuration on a transfer line sets the line's hours and the number to use outside them. Open the transfer line and select **Add Configuration**.
+
+| Field | What it does |
+| --- | --- |
+| **Days of Week** | The days the configuration applies. |
+| **Start Time** and **End Time** | The hours it applies. |
+| **Timezone** | The time zone for those hours. |
+| **Alternate Phone Number** | The number used outside the line's hours, such as an after-hours answering service. |
+| **Name of Alternate Number** | A name for that number. |
+| **Transfer Confirmation Prompt for Alternate Number** | What the AI asks before sending a call to the alternate number. |
+
+A transfer line's hours are set by day of the week and time, so they don't change on a holiday. A line open on weekdays still counts as open on a weekday holiday. To cover holidays, set the holiday's **Default Transfer Line** and leave **Apply to all transfer lines** checked.
+
+## What happens when no one is available
+
+1. When a caller asks for a person, the AI looks for a transfer line that matches the request.
+2. If none matches, the AI offers the default transfer line for right now. On a holiday, that's the holiday's **Default Transfer Line**.
+3. If the matched line is outside its hours and has an alternate number, the AI offers the alternate number.
+4. If the line is outside its hours and has no alternate number, the AI tells the caller that line isn't available right now. It doesn't dial the main number.
+
+If you leave a holiday's **Default Transfer Line** blank, the AI has no default number to offer that day. It doesn't fall back to the phone line's regular default.
+
+If the phone line has no default transfer line and no voicemail intake, you'll see a **No Transfer Fallback** warning when you save. To give callers somewhere to go, select **Create Voicemail Intake** on the phone line's first step so they can leave a message.
+
+## Before the holiday
+
+- The holiday is added with this year's dates.
+- The greeting says the office is closed and when it reopens.
+- The holiday's **Default Transfer Line** goes to a number someone will answer.
+- **Apply to all transfer lines** is checked.
+- Transfer lines that need after-hours coverage have an alternate number.
+
+**Tip:** to hear the holiday greeting ahead of time, add today's date to the holiday, call the line, then remove today's date and save again.
+
+## Related articles
+
+- [Transfer lines and after-hours routing](/ai-front-desk/phone-and-voice/transfer-lines-and-after-hours-routing)
+- [Set up an AI phone line](/ai-front-desk/phone-and-voice/set-up-an-ai-phone-line)
+- [Test the AI before go-live](/ai-front-desk/how-the-ai-answers/test-the-ai-before-go-live)

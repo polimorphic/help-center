@@ -1,0 +1,34 @@
+---
+title: "Add a payment step"
+---
+
+Most permits and licenses come with a fee. A **Collect Payment** step bills the resident at the right point in a [workflow](/getting-started/glossary), and the [case](/getting-started/glossary) waits there until the bill is paid.
+
+## Before you begin
+
+- Your organization needs a connected Stripe account. If it isn't connected yet, the **Publish Workflow** window warns you. See [How to connect your Stripe account to accept payments](/working-in-polimorphic/payments/how-to-connect-your-stripe-account-to-accept-payments), or contact your Customer Success Manager to get payments set up.
+- The workflow needs to be a draft.
+- Have each fee name and amount ready, such as a $75 application fee.
+
+## Add a fee to a workflow
+
+1. Open the workflow and select **Edit Workflow**.
+2. In **Add Steps**, select **Collect Payment**.
+3. Under **Line items**, enter the fee name in **Item name**, such as *Application fee*.
+4. Enter the fee in **Amount**, such as *75*.
+5. To add another fee, select **Add** and fill in the next line.
+6. To calculate a fee from the applicant's answers, select **Edit formula** on that line.
+7. Check the **Total**.
+8. Connect the payment step after the form that collects what the fee depends on.
+9. If a staff member should hear when the bill is created, select **Add assignees**.
+
+Once the workflow is published, each case that reaches this step gets a bill with your line items. The resident can pay online, or staff can take the payment for them. Steps after the payment step wait until the bill is paid.
+
+**Tip:** Before you publish, run a test case through the workflow to check that the total looks right.
+
+## Related articles
+
+- [How to connect your Stripe account to accept payments](/working-in-polimorphic/payments/how-to-connect-your-stripe-account-to-accept-payments)
+- [Take a payment on behalf of a resident](/working-in-polimorphic/payments/take-a-payment-on-behalf-of-a-resident)
+- [Create a workflow: build a permit renewal from start to finish](/building-workflows/create-a-workflow-build-a-permit-renewal-from-start-to-finish)
+- [A workflow step isn't moving forward](/troubleshooting/troubleshooting/a-workflow-step-isn-t-moving-forward)

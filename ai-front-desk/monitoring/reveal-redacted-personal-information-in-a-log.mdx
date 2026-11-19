@@ -1,0 +1,38 @@
+---
+title: "Reveal redacted personal information in a log"
+---
+
+Sometimes you need to follow up with a resident after an AI conversation, like returning a call the AI promised. Polimorphic hides personal details in logs by default, but you can reveal them when your work requires it.
+
+PII (personally identifiable information) is anything that can identify a person, such as a name, phone number, email address, or street address. Hiding it means staff reviewing AI answers don't see residents' personal details unless they need to.
+
+## Before you begin
+
+- Revealing details takes access to [interaction log](/getting-started/glossary) personal information. The *Knowledge Base Admin (PII)* role template includes it.
+- Have a work reason ready. You'll pick one each time.
+
+## Reveal the details
+
+1. Select **Log** under **AI Front Desk** in the left menu.
+2. Open the conversation.
+3. Select **Reveal Redactions**. This button appears only when the conversation has hidden details.
+4. In **Reason for Access**, pick the reason that fits: **Customer Support**, **Legal or Compliance**, **Audit Review**, **Engineering Debug**, or **Other**.
+5. Select **Reveal PII**.
+
+The conversation shows the resident's details in place of the hidden text. Polimorphic records each reveal with your name, the conversation, and the reason you picked.
+
+## Hide the details again
+
+1. Select **Restore Redactions**.
+
+The details are hidden again.
+
+**Tip:** Hide the details as soon as you have what you need, especially if your screen is visible to others.
+
+Example: a resident calls the clerk's office to say the AI promised a callback but no one called. The clerk opens the conversation, reveals the details with the reason **Customer Support**, finds the phone number, and returns the call.
+
+## Related articles
+
+- [Review interaction logs](/ai-front-desk/monitoring/review-interaction-logs)
+- [Roles and permissions matrix](/administration/roles-and-permissions-matrix)
+- [Data security and PII handling overview](/security-privacy-and-compliance/data-security-and-personal-information-handling)

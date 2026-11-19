@@ -1,0 +1,49 @@
+---
+title: "Import contacts from a file"
+---
+
+If you're moving over from a spreadsheet or another system, you don't have to add [contacts](/getting-started/glossary) one by one. Upload a CSV (comma-separated values) file, match its columns to contact fields, and Polimorphic adds everyone at once.
+
+## Before you begin
+
+- Save your list as a CSV file. Other file types aren't accepted.
+- Include a first name column and a last name column. Both are required.
+- Tidy up the file first. Check that each column holds one kind of data, such as only email addresses, and remove blank and repeated rows.
+
+## Upload your contacts
+
+1. Select **Contacts** in the left sidebar.
+2. Select **Upload Contacts**.
+3. In the **Import Contact Details** window, select **Click to upload**.
+4. Pick your CSV file.
+5. Under **Formatting Options**, turn on **Convert data to Title Case** if your file is in all capitals or all lowercase.
+6. Turn on **Update existing contacts based on email address** if some people in the file are already contacts and you'd like to update them. Leave it off to add new contacts only.
+7. Under **Column Mapping**, select the column from your file that matches **First Name**.
+8. Select the column that matches **Last Name**.
+9. Match any other columns you'd like to bring in, such as **Emails**, **Phones**, **Tags**, or addresses.
+10. Select **Add**.
+11. Wait for "Uploading contacts..." to finish before you close the page.
+
+The new contacts show up on the Contacts page. If some rows couldn't be added, Polimorphic shows a message telling you why.
+
+## Avoid common problems
+
+### Run one import at a time
+
+Wait for an import to finish before you start another one for the same [contact book](/getting-started/glossary). Starting a second import while one is still running can be refused or can create duplicate contacts.
+
+### Duplicate contacts
+
+- If you see "One or more of the contacts you are trying to upload already exist," some email addresses in your file already belong to contacts. Those rows were skipped. To update those contacts instead, run the import again with **Update existing contacts based on email address** turned on.
+- If you see "One or more of the contacts you are trying to upload already exist in a different Contact Book," those email addresses belong to contacts in another organization's contact book. Those rows can't be imported here.
+- Rows without an email address can't be checked for duplicates by email. Uploading the same file twice can create duplicates of those people.
+
+### Addresses that don't import
+
+Polimorphic checks each address against a mapping service. If an address can't be found, that row may not import. Fix the address in your file and upload only the rows that failed.
+
+## Related articles
+
+- [Contact fields](/working-in-polimorphic/contacts/contact-fields)
+- [Add or edit a contact](/working-in-polimorphic/contacts/add-or-edit-a-contact)
+- [How contacts and interaction history work](/working-in-polimorphic/contacts/how-contacts-and-interaction-history-work)

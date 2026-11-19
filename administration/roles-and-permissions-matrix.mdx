@@ -1,0 +1,64 @@
+---
+title: "Roles and permissions matrix"
+---
+
+When you're building a role or checking why someone can or can't do something, use this page to look up every permission area and what each role template includes.
+
+To see this in the product, select **Settings**, then **Access**, then **Roles**, and open a role. The **Resource** column lists each area. The other columns are the actions.
+
+## Actions
+
+| Action | Lets the person |
+| --- | --- |
+| **read** | See records in the area. |
+| **write** | Create and change records. |
+| **delete** | Remove records. |
+| **export** | Download records. |
+
+## Permission areas
+
+| Resource | What it covers |
+| --- | --- |
+| **Cases** | [Cases](/getting-started/glossary), their activity, tasks, and documents. |
+| **Processes** | [Workflows](/getting-started/glossary) and their versions. |
+| **Contacts** | The [contact book](/getting-started/glossary) and [contact](/getting-started/glossary) imports. |
+| **Payments** | Bills and payments, including taking payments. |
+| **Lookup payments** | Payment types and the bills in them. |
+| **Payouts** | Payout batches. |
+| **Payment settings** | Your organization's payment setup. |
+| **Assets** | Assets and locations used by workflows and maps. |
+| **Outbound communications** | Emails and text messages sent to many residents at once. |
+| **Knowledge base** | The sources the AI uses to answer questions. |
+| **Interaction logs** | Logs of resident conversations with the AI. |
+| **Interaction logs pii** | Personal information in those logs. PII stands for personally identifiable information. |
+| **Interaction analytics** | AI analytics dashboards. |
+| **Interaction customization** | How the AI chat and search look and behave. |
+| **Assistant logs** | Logs for the staff assistant. |
+| **Assistant settings** | Settings for the AI assistant. |
+| **Organization settings** | General settings, tags, email domains, and [SSO](/getting-started/glossary) (single sign-on). |
+| **User management settings** | Users, groups, and roles. |
+
+## Role templates
+
+When you select **Add Role**, you can pick a **Template** to start from. "All" means read, write, delete, and export.
+
+| Template | All actions on | Read only on |
+| --- | --- | --- |
+| *Staff* | Cases, Processes, Contacts, Payments, Assets | None |
+| *Finance Admin* | Payments, Lookup payments, Payouts | Cases, Processes, Contacts, Assets |
+| *Knowledge Base Manager* | [Interaction logs](/getting-started/glossary), Interaction analytics, Interaction customization, [Knowledge base](/getting-started/glossary) | Cases, Processes, Contacts, Assets |
+| *Knowledge Base Admin (PII)* | Everything in Knowledge Base Manager, plus Interaction logs pii and User management settings | Cases, Processes, Contacts, Assets |
+| *Account Provision* | User management settings | None |
+| *Org Management* | Organization settings, User management settings, Assistant settings | None |
+
+A template is a starting point. After you pick one, you can turn individual actions on or off before you save.
+
+## Good to know
+
+- **Cross-Organization Role** roles can't include Organization settings, User management settings, or Assistant settings.
+- A role with no permissions is removed. If you clear every permission, you'll need to create the role again.
+
+## Related articles
+
+- [Roles and permissions](/administration/roles-and-permissions)
+- [Invite staff and manage accounts](/administration/invite-staff-and-manage-accounts)

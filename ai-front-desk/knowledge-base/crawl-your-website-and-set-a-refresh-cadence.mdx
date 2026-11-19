@@ -1,0 +1,50 @@
+---
+title: "Crawl your website and set a refresh cadence"
+---
+
+Your website is usually the best source of answers residents already have. Add it to the [Knowledge Base](/getting-started/glossary) and the AI reads every page, then Polimorphic checks back on a schedule you pick so answers stay current as the site changes.
+
+## Before you begin
+
+- Know your website's main address, such as *https://www.fairviewtown.gov*.
+- Think about which parts of the site the AI should skip, such as old news posts or a staff intranet.
+
+## Add the website
+
+1. Select **Knowledge Base** under **AI Front Desk** in the left menu.
+2. Open the **Domains** tab.
+3. Select **Add Domain**.
+4. In **Website URL**, enter your website's address.
+5. Wait while Polimorphic detects the site type. Check that **Site Type** is right, and change it if it isn't.
+6. Select **Next**.
+
+## Pick what to read and how often
+
+1. Under **Availability**, pick **Everyone** or **Staff only**.
+2. In **Crawl Frequency**, pick how often to check the site.
+3. Optional: open **Advanced settings** and enter folders to skip in **Exclude paths**, such as */news/archive*.
+4. Optional: in **Include paths**, enter folders to limit the crawl to, such as */departments*.
+5. Optional: turn on **Include PDFs linked on these pages** to read PDF files the pages link to.
+6. Optional: turn on **Limit crawl depth?** and set **Max crawl depth** to stop the crawl a few links away from the address you entered.
+7. Select **Add Domain**.
+
+## Which crawl frequency to pick
+
+| Option | Good for |
+| --- | --- |
+| **Weekly** | Sites that post news, meeting notices, or closures often |
+| **Monthly** | Most city and county sites |
+| **Every 3 Months** | Sites that rarely change, such as a municipal code site |
+| **No cadence (manual only)** | Sites you refresh by hand when you know they changed |
+
+To change the schedule later, edit the domain on the **Domains** tab and select **Save Changes**.
+
+The domain appears on the **Domains** tab, and its pages appear as sources after the first crawl. Polimorphic checks the site again on the schedule you picked. When a page changes, the next crawl updates the answers that use it.
+
+If you change a page today and can't wait for the next crawl, open that page's source and use **Refresh this source in the AI index**.
+
+## Related articles
+
+- [Knowledge base sources](/ai-front-desk/knowledge-base/knowledge-base-sources)
+- [Add documents, links, and FAQs](/ai-front-desk/knowledge-base/add-documents-links-and-faqs)
+- [Knowledge source types](/ai-front-desk/knowledge-base/knowledge-source-types)

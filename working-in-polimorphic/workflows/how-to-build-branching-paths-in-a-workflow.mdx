@@ -1,0 +1,36 @@
+---
+title: "How to build branching paths in a workflow"
+---
+
+Not every request should follow the same path. A business license might need a fire inspection while a home business doesn't. Branching lets a workflow send each case down the right path: a step can lead to several next steps, conditions decide which path a case takes, and parallel paths can join back together.
+
+## Send a step down more than one path
+
+1. Go to **Workflows** in the left-hand sidebar and open the workflow.
+2. Open the workflow editor.
+3. Drag a connection from a step to each next step it should lead to. A step can have more than one outgoing connection.
+4. Save the workflow.
+
+The step now shows a connection to each next step.
+
+## Only follow a path when a condition is met
+
+1. In the workflow editor, select the connection between two steps.
+2. Click **Add connection condition**.
+3. Build the condition, such as an answer the resident gave on an earlier form.
+4. Save.
+
+Cases now follow that connection only when the condition is met. To remove a condition, select the connection and click **Remove connection condition**. To remove the connection entirely, click **Delete connection**.
+
+## Pick how paths join back together
+
+When more than one connection leads into the same step, a join badge appears on that step. Click the badge to pick when the step starts:
+
+- **Wait for any branch**: the step starts as soon as one incoming path is done. This is the default.
+- **Wait for all branches**: the step starts only after every incoming path is done.
+- **Wait for a custom condition**: the step starts when a condition you define is met.
+
+## Check your paths before you publish
+
+- Run a test case through the workflow to make sure each path behaves the way you expect.
+- Make sure every path eventually reaches a step that completes the case, so no case gets stuck.

@@ -1,0 +1,96 @@
+---
+title: "Transactions, receipts, and payout batches"
+---
+
+When you're reconciling at the end of the day or tracking down a resident's payment, you'll be on the **Transactions** and **Payout Batches** tabs. Here's what every column, filter, and status means, plus what's on a receipt.
+
+To find these tabs, select **Payments** in the left menu. The Payments page has three tabs: **Payment Types**, **Transactions**, and **Payout Batches**.
+
+## Transactions tab
+
+A transaction is one payment attempt by one payer.
+
+### Columns
+
+| Column | What it shows |
+| --- | --- |
+| **Attempted On** | When the payment started. |
+| **Completed On** | When the payment finished. Blank if it hasn't finished. |
+| **ID** | The payment's reference number. |
+| **Payment Type** | The kind of bill, such as *Building Permit Fee*. |
+| **Payer Name** | The person or business that paid. |
+| **Case ID** | The [case](/getting-started/glossary) the bill belongs to, if any. |
+| **Method** | How the payer paid. |
+| **Amount** | The amount paid. |
+| **Receipt** | Opens the receipt. |
+| **Reconciled** | Whether your finance team has matched this payment to its records. |
+
+### Filters
+
+| Filter | Values |
+| --- | --- |
+| **Payment Method** | **Check**, **Cash**, **Credit Card**, **eCheck / ACH** |
+| **Payment Type** | Your organization's payment types |
+| **Reconciliation Status** | **Reconciled**, **Unreconciled** |
+| **Payment Status** | **Processing**, **Succeeded**, **Failed** |
+| **Date** | A date range |
+
+### Payment status values
+
+| Status | Meaning |
+| --- | --- |
+| **Processing** | The payment started but hasn't finished. Bank (ACH) payments can stay here for a few days. |
+| **Succeeded** | The payment finished. |
+| **Failed** | The payment didn't go through. The resident still owes the amount. |
+
+A bill's status is separate from a payment's status. A bill can show **Unpaid**, **Paid**, or **Waived** no matter how many payment attempts it had.
+
+## Build a report or reconcile in bulk
+
+**Batch Action** builds a transaction report and can mark payments as reconciled. It has five steps: **Identity**, **Payments**, **Payment Type**, **Review**, and **Download**.
+
+| Option | What it does |
+| --- | --- |
+| **Select Time Frame** | **All Time**, **Today**, **Yesterday**, or **Custom Range**. |
+| **Paid through Polimorphic** | Includes payments made in Polimorphic. |
+| **Payment Methods** | Limits the report to the methods you pick. |
+| **Reconciliation Status** | **Unreconciled**, **Reconciled**, or **All**. |
+| **Only select payments that are not yet in a payout batch** | Leaves out payments already grouped in a batch. |
+| **Mark transactions downloaded in report as reconciled** | Marks every payment in the report as reconciled when you download it. |
+| **Generate payout from selected transactions** | Groups the selected payments into a payout batch. |
+| **Split each transaction into a separate batch** | Makes one batch per payment instead of one batch for all. |
+| **Stripe Payout Descriptor (22 character limit)** | The short label that appears on your bank statement for the payout. |
+
+## Track money going to your bank
+
+A payout batch is a group of payments sent to your organization's bank account together. Card and bank payments go through Stripe, the payment processor.
+
+| Column | What it shows |
+| --- | --- |
+| **Amount** | The batch total. |
+| **Status** | How far along the payout is. |
+| **Date** | When the batch was created. |
+| **Stripe ID** | Stripe's reference for the payout. |
+| **Descriptor** | The bank-statement label. |
+
+You can filter by **Date** (**Today**, **Yesterday**, **Last 7 Days**, **Last 30 Days**) and by **Payment Type**, or use **Search payouts**.
+
+Select a batch to open **Payout Details**. It lists each payment in the batch with its **Payer Name**, **Method**, and **Date**. The list loads when you open it. If it doesn't load, close it and open it again.
+
+Two coworkers can see different transactions and payout batches, depending on their access to payments and payouts.
+
+## What's on a receipt
+
+A receipt opens with the heading **Payment Confirmation**. It shows:
+
+- That the bill was paid, and when.
+- Each charge and the total.
+- Any processing fee, if the payer covered it.
+
+Residents see the same receipt after they pay online.
+
+## Related articles
+
+- [Take a payment on behalf of a resident](/working-in-polimorphic/payments/take-a-payment-on-behalf-of-a-resident)
+- [Create and bulk-upload bills](/working-in-polimorphic/payments/create-and-bulk-upload-bills)
+- [Roles and permissions matrix](/administration/roles-and-permissions-matrix)

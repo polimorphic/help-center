@@ -1,0 +1,39 @@
+---
+title: "Integration connection fields"
+---
+
+When you're connecting a system and wondering what goes in a field, look it up here. This page lists every field you'll fill in, by system.
+
+## Fields on every integration
+
+| Field | What to enter |
+| --- | --- |
+| **Connection Name** | A name staff will recognize, such as "Cityworks – public works." |
+| **Enable API Endpoints** | The actions Polimorphic may use. |
+| Surfaces | Where each action can be used: **Chat**, **Search**, **Voice**, or **Assistant**. Set on **Edit Integration**. |
+
+## Fields for hosted integrations
+
+| Integration | Fields |
+| --- | --- |
+| Cityworks | **Base URL**, **Username**, **Password** |
+| Tyler Munis (ARWS) | **Host**, **Username**, **Password**, **Default Category** |
+| Cayenta Utility Billing | **Host**, **Username**, **Password** |
+| FastTrack | **Host**, **API Key** |
+| Catalis Request311 | **Host**, **API Key** |
+| SharePoint | **Access Mode**, **Tenant ID**, **Client ID**, **Client Secret** |
+
+## Fields for custom integrations
+
+| Field | What it means |
+| --- | --- |
+| **Integration Name** and **Description** | How the integration appears to staff. |
+| **Integration Type** | **API** connects to a web service. **Browser** reads web pages. |
+| Base URL | The main web address of the system. Can't be changed later. |
+| **Auth Type** | How Polimorphic signs in, such as **API Key**, **Bearer Token**, or **Client Credentials**. Can't be changed later, but you can enter a new secret value for it at any time. Leave the field blank to keep the current one. |
+| **Header Name** and **Prefix (optional)** | Where the key goes in each request, if your system needs it. |
+| **Client ID**, **Client Secret**, **Grant Type** | For **Client Credentials** sign-in. |
+| **Default Headers** | Extra details sent with every request. |
+| **Tool Name** and **Tool Description** | How the AI knows what an action does and when to use it. |
+| **Enable for AI Agents** | Lets the AI use the action. |
+| **Advanced Settings** | Timeout and rate limit for an action. |

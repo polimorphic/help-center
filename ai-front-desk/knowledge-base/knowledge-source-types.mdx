@@ -1,0 +1,43 @@
+---
+title: "Knowledge source types"
+---
+
+Not sure whether something belongs in a document, an [FAQ](/getting-started/glossary), or a link? Here's each kind of knowledge source, what it holds, and how it shows up in answers.
+
+## Source types
+
+| Type | What it is | Example | Shown as a link in answers | How it stays current |
+| --- | --- | --- | --- | --- |
+| **Links** | A single web page. | Your *Pet registration* page | Yes | Refresh it from the source's edit window, or through its domain's crawl |
+| **Documents** | An uploaded PDF, Word file, spreadsheet, or text (.txt) or Markdown (.md) file. | A fee schedule | Yes | Upload a new version |
+| **Domains** | A whole website that Polimorphic crawls page by page. | www.fairviewtown.gov | Yes, for each page | Crawl Frequency setting |
+| **FAQs** | A topic and answer you write. | "Is City Hall open on Veterans Day?" | No | Edit it |
+| **Workflows** | A [workflow](/getting-started/glossary) residents can apply through, with an **AI Description** that tells the AI when to suggest it. | Building permit application | Yes, when it has an apply link | Edit the AI Description |
+| **Transfer Lines** | A staff phone number the AI can transfer callers to. | Utility billing line | No | Edit it |
+| **GIS Layers** | A map layer the AI checks for location-based answers. | Trash collection zones | No | Live ArcGIS layers stay current. Uploaded files need a new upload. |
+| **Integrations** | A connected system the AI can look up details in. | Utility billing system | No | Live lookup |
+
+## Settings for each source
+
+| Setting | What it does |
+| --- | --- |
+| **Availability** | **Everyone** lets residents get answers from it. **Staff only** limits it to staff tools. |
+| **Display Name** | The name shown for the source. |
+| **Add tag** | Adds a tag to help the source show up for the right questions. Links and documents only. |
+| **Refer to source in response** | When off, the source shapes answers but is never linked. |
+| **Refresh this source in the AI index** | Reads the source again so changes reach answers. |
+
+## Website site types
+
+When you add a domain, Polimorphic detects the site type. You can change it in **Site Type**. Options include **Generic Website**, **CivicPlus**, **Granicus**, **Granicus OpenCities**, **Revize**, **ProudCity**, **WordPress**, **Municode**, **AmLegal**, **MunicipalCodeOnline**, **EncodePlus**, **CivicClerk**, and **EZTask**.
+
+## Search results list
+
+On the website search bar, the **All Results** list shows only web pages and documents, with the best match first. Other source types can still shape the written answer.
+
+## Related articles
+
+- [Knowledge base sources](/ai-front-desk/knowledge-base/knowledge-base-sources)
+- [Add documents, links, and FAQs](/ai-front-desk/knowledge-base/add-documents-links-and-faqs)
+- [Crawl your website and set a refresh cadence](/ai-front-desk/knowledge-base/crawl-your-website-and-set-a-refresh-cadence)
+- [Transfer lines and after-hours routing](/ai-front-desk/phone-and-voice/transfer-lines-and-after-hours-routing)

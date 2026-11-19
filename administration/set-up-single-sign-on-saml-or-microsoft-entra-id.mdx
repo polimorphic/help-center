@@ -1,0 +1,70 @@
+---
+title: "Set up single sign-on (SAML or Microsoft Entra ID)"
+---
+
+Staff already have a Microsoft work account, so there's no reason for them to juggle another password. With single sign-on ([SSO](/getting-started/glossary)), they sign in to Polimorphic with that account using SAML (Security Assertion Markup Language) 2.0, and your IT team stays in control of who gets in.
+
+## Before you begin
+
+- Loop in someone who can create an enterprise application in your Microsoft Entra tenant, usually your IT team.
+- Pick which staff will be **Break-glass users**. These people can always sign in with a password, so you aren't locked out if SSO stops working. Pick at least one administrator.
+- Know your staff email domain, such as *cityofmarion.gov*.
+
+## Start the setup
+
+1. Select **Settings** in the left menu.
+2. Select **SSO & Identity**.
+3. Under **Identity Providers**, find **Microsoft Entra** and select **Configure**.
+
+The setup has three steps: **Identity Provider Setup**, **Polimorphic Configuration**, and **Test Connection**.
+
+## Step 1: Give Microsoft the Polimorphic details
+
+1. Copy **Identifier (Entity ID)** and paste it into your Entra enterprise application's SAML settings.
+2. Copy **Reply URL (Assertion Consumer Service URL)** and paste it into Entra.
+3. Copy **Sign-on URL** and paste it into Entra.
+4. Copy **Log-out URL** and paste it into Entra.
+5. In Entra, assign the staff or groups who should use Polimorphic.
+6. Go to the next step in Polimorphic.
+
+## Step 2: Give Polimorphic the Microsoft details
+
+Your IT team finds these values in the Entra enterprise application.
+
+1. Enter **Azure AD Tenant ID**.
+2. Enter **Application (Client) ID**.
+3. Enter **Login URL**.
+4. Enter **Azure AD Identifier**.
+5. Paste the Base64 version of the **SAML signing certificate**.
+6. Go to the next step.
+
+## Step 3: Test the connection
+
+1. Select **Test Connection**.
+2. Sign in with a Microsoft account that's assigned to the app.
+
+If you see **Connection successful!**, you're ready for the next section. If you see **Connection test found issues**, check each copied value for extra spaces and try again.
+
+## Pick how staff sign in
+
+1. In **Email domains**, select the domains that should use SSO.
+2. In **Break-glass users**, select the people who can always use a password.
+3. In **Authentication mode**, pick one:
+   - **Password Only**: SSO is off.
+   - **Dual (Password + SSO)**: staff can use either. Use this while you test.
+   - **SSO Only**: staff have to use SSO, except break-glass users. Add at least one break-glass user first.
+4. Optional: set a **Session timeout** in hours or days.
+5. Optional: in **Default group**, select the group new SSO users join.
+6. Optional: under **Group mappings**, match each Entra group (by its **Group object ID**) to a Polimorphic group.
+7. Select **Save**.
+
+Staff with your email domain can now sign in with their Microsoft account. Groups that SSO manages show a lock icon in Access, and their members update each time someone signs in. Break-glass users can still sign in with a password.
+
+**Tip:** Start in **Dual (Password + SSO)** mode and give staff a heads-up before you switch to **SSO Only**, so nobody is surprised at sign-in.
+
+## Related articles
+
+- [Log in and reset your password](/getting-started/log-in-and-reset-your-password)
+- [Roles and permissions](/administration/roles-and-permissions)
+- [Invite staff and manage accounts](/administration/invite-staff-and-manage-accounts)
+- [A staff member can't log in](/troubleshooting/troubleshooting/a-staff-member-can-t-log-in)

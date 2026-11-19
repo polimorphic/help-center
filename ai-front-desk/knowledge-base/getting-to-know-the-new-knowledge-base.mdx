@@ -1,0 +1,153 @@
+---
+title: "Getting to know the new Knowledge Base"
+---
+
+If you've opened the [Knowledge Base](/getting-started/glossary) lately and things look different, you're not imagining it. Links, documents, text, and domains that used to live on separate tabs are now in one Sources list, and an overview at the top shows how your AI is doing and which tools it can use. Here's a walk through each part of the page and the tasks you'll do most.
+
+## Open the Knowledge Base
+
+1. Log into Polimorphic and click **Knowledge Base** in the left-hand menu.
+2. If you manage more than one organization, use the organization selector in the top-right corner of the page to switch between them.
+
+The page has three main areas: **Health check**, **Connected tools**, and **Sources**.
+
+![](/images/articles/58740736535835.png)
+
+## Health check
+
+The Health check card summarizes the most recent run of your question sets, so you can see at a glance how well your AI is answering. Health check now lives inside the Knowledge Base instead of having its own item in the left-hand menu.
+
+- **Pass rate** shows the share of question sets that passed, with a bar and a chip that tells you whether it meets the target. If you've run the health check more than once, a second chip shows how much the pass rate changed since the previous run.
+- **Passed**, **Failed**, and **Question sets** show the counts behind that pass rate.
+- If any question sets failed, click **Fix failing question sets** (it shows how many failed) to go straight to them. Otherwise, click **View the latest health check** to review individual results.
+- If you haven't run a health check yet, click **Configure health check** to set up your first question sets.
+
+### Fix an answer from the health check
+
+When you review results, a question your AI answered poorly shows an **Add source** button. Click it to add a Text source with the question and expected answer already filled in. Review the content, choose who can see it, and save. The next time someone asks that question, your AI will use your answer.
+
+## Connected tools
+
+Beyond written sources, your AI can use other tools to help residents. The Connected tools card lists each one with a quick count:
+
+- **Integrations**: connected systems your AI can look information up in.
+- **Transfer lines**: the phone numbers your AI can send callers to.
+- **Workflows**: published workflows your AI can point residents to.
+- **GIS layers**: map data your AI can use to answer location questions.
+
+Click any tool to preview what's connected. To add or change items, click the button at the bottom of the preview:
+
+- **Open integrations**, **Open transfer lines**, and **Open GIS layers** take you to that page in **Settings**.
+- **View workflows** opens the **Workflows** page, filtered to the workflows your AI can use.
+
+![](/images/articles/58740744581531.png)
+
+![Connected tools preview dialog](/images/articles/58738350335259.png)
+
+## Sources
+
+The Sources list contains everything your AI reads to answer questions, all in one place. Each row shows:
+
+- **Source**: the name and type (Link, Document, Text, or Domain).
+- **Category**: the kind of page, such as Department, Calendar Event, or Job Posting. Text and domains don't have a category.
+- **Access**: **External** sources can be used to answer residents. **Internal** sources are for staff only.
+- **Usage**: how often your AI has cited or referenced the source in conversations over the last 30 days, compared with your other sources: High, Above average, Average, Low, or Unused. Hover over it to see the number of conversations, a daily chart, and when it was last used. Click the column header to sort by usage.
+- **Updated**: when the source was last refreshed.
+
+Usage is a quick way to find the sources doing the most work, and the ones your AI never uses.
+
+![](/images/articles/58740428547227.png)
+
+### Find a source
+
+1. Type in **Search title, URL, or content** to look for a source by its name, web address, or the text inside it.
+2. Click **Filter** to narrow the list by **URL**, **Source type**, **Access**, **Category**, **Folder**, or **Domain**. Your active filters appear as chips below the search bar, and you can remove them one at a time or all at once.
+3. Use the **Active** / **Archived** toggle to switch between sources your AI is using and sources you've set aside.
+
+![](/images/articles/58740428552603.png)
+
+### Add a source
+
+1. Click **Add source** in the top-right corner of the Sources list.
+2. Choose the kind of source you want to add:
+   - **Link**: one or more web pages. Each link must start with http:// or https://.
+   - **Document**: a file such as a PDF, Word document, PowerPoint, text file, or image.
+   - **Text**: a topic and its content, typed directly into Polimorphic. Use this for information that isn't published anywhere else. When Text conflicts with a link or document, your AI uses the Text. To add several in a row, click **Save and add another**. (This was called FAQs in the previous design.)
+   - **Text CSV upload**: add many Text sources at once from a spreadsheet saved as a CSV. The file needs either Topic and Content columns, or Question and Answer columns.
+3. Choose who can see the source (**Everyone** or **Staff only**), then save.
+
+If you're inside a folder when you add a source, the new source is added to that folder.
+
+To add pages from a whole website, contact your Customer Success Manager or email support@polimorphic.com and the team will add the domain for you.
+
+![Add source menu with Link, Document, Text, and Text CSV upload options](/images/articles/58738350343451.png)
+
+### Browse a domain
+
+A domain is a website your AI reads page by page. Each domain row shows how many links it includes.
+
+- Click a domain to see only its links. Click **All sources** in the breadcrumb to go back.
+- For many websites you can switch between **Table view** and **Sitemap view** to see the domain's pages laid out the way the site is organized.
+- Use the three-dot menu on a domain row and choose **View history** to see when the website was last read.
+
+Domains can't be put in folders.
+
+![](/images/articles/58740736541851.png)
+
+### Organize sources into folders
+
+Folders keep related sources together, for example everything for one department or program. Links, documents, and Text can all go in folders.
+
+1. Click **New folder** and give the folder a name.
+2. Use **Expand all** to see the sources inside every folder without leaving the list, and **Collapse all** to fold them back up.
+
+![Sources list with folders expanded](/images/articles/58738375590683.png)
+
+- Click a folder's name to open it. Only that folder's sources are shown, and a Folder filter chip appears above the list. Click **All sources** in the breadcrumb, or remove the chip, to go back.
+- To put existing sources into a folder, select them and click **Move selected**, or open **Edit source** and choose a folder.
+- To rename or delete a folder, use the three-dot menu on the folder's row. Deleting a folder doesn't delete its sources; they just stop being in that folder.
+
+Folders can't be placed inside other folders.
+
+![Inside a folder with the Folder filter chip and breadcrumb](/images/articles/58738350361115.png)
+
+### Edit a source
+
+1. Click the three-dot menu at the end of a row.
+2. Choose **Edit source** (or **Edit Text** for a Text source).
+3. From here you can:
+   - Change the **Display Name**.
+   - Move the source to a different **Folder**, or choose **No folder**.
+   - Set **Availability** to **Everyone** or **Staff only**.
+   - For sources available to Everyone, turn on **Refer to source in response** to let your AI link to the source in its answers. When it's off, your AI still uses the source but won't link to it.
+   - Add tags to help your AI prioritize the source. Press Enter after each tag.
+4. Click **Save**.
+
+For links and documents, the same menu also has **Archive source** and **Manual update**. Use Manual update when a web page or document has changed and you want your AI to re-read it right away. For Text, the menu has **Delete Text**.
+
+![Edit source dialog](/images/articles/58738375596059.png)
+
+### Archive, restore, delete, or move several sources at once
+
+1. Select the checkbox next to each source you want to change, or use the checkbox in the header to select the whole page.
+2. Choose an action from the bar above the list:
+   - **Move selected** puts links, documents, and Text in a folder.
+   - **Archive selected** stops your AI from using the selected links and documents. Text isn't archived; if your selection includes Text, it's skipped.
+   - **Delete selected** permanently deletes the selected Text sources. Links and documents are never deleted this way.
+3. To bring archived sources back, switch to **Archived**, select them, and click **Restore selected**.
+
+Archived sources stay in your Knowledge Base and can be restored at any time. Deleted Text can't be restored.
+
+![](/images/articles/58740428561051.png)
+
+## What's changed from the previous Knowledge Base
+
+- The separate Links, Domains, Documents, and FAQs tabs are combined into one Sources list. Use the Source type filter to see one kind at a time.
+- FAQs are now called Text, and Text can now go in folders.
+- Integrations, transfer lines, workflows, and GIS layers are now under Connected tools.
+- Health check results appear right on the Knowledge Base page, and Health check no longer has its own item in the left-hand menu.
+- A new Usage column shows which sources your AI relies on most.
+
+## Who can see what
+
+Anyone with access to the Knowledge Base can browse and search sources and see the Health check card. The Connected tools card, and the options to add, edit, organize, or archive sources, only show for staff who can edit the Knowledge Base. Deleting Text also requires permission to delete. If you need that access, ask an administrator in your organization.

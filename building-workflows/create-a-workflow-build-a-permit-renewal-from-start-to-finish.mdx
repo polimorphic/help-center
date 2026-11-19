@@ -1,0 +1,90 @@
+---
+title: "Create a workflow: build a permit renewal from start to finish"
+---
+
+The easiest way to learn the [workflow](/getting-started/glossary) builder is to build something real. In this tutorial, you'll build a working sidewalk dining renewal workflow, test it, and publish it. It takes about 30 minutes.
+
+## Before you begin
+
+- To collect the fee, your organization's payment account needs to be connected. If it isn't, you can still follow along and skip the payment part.
+- Have your renewal questions and fee amount ready. This example uses a $150 fee.
+
+## Create the workflow
+
+1. Open the menu and select **Create Workflow**.
+2. In **Name**, enter *Sidewalk dining renewal*.
+3. In **Description (optional)**, enter *Annual renewal for restaurants with sidewalk seating.*
+4. Under **Who should have access to this workflow?**, select **Public-facing**. This lets restaurant owners apply online.
+5. Select **Create**.
+
+The **Workflow Editor** opens with your new, empty workflow.
+
+## Add the application form
+
+1. In **Add Steps**, select **Complete Form**.
+2. In **Step Name**, enter *Renewal application*.
+3. Under **Who can complete this step**, select **Public facing (external)**.
+4. Add a text question with the **Label** *Business name*, and turn on **Required**.
+5. Add an address question with the **Label** *Business address*, and turn on **Required**.
+6. Add a file question with the **Label** *Certificate of insurance*, and turn on **Required**.
+7. Set **Status upon completion** to Open. This opens the [case](/getting-started/glossary) when the restaurant submits the form.
+
+The form step appears on the workflow map.
+
+## Add the fee
+
+1. In **Add Steps**, select **Collect Payment**.
+2. Under **Line items**, enter *Annual renewal fee* in **Item name**.
+3. Enter *150* in **Amount**.
+
+Applicants will be asked to pay $150 at this step.
+
+## Add the staff review
+
+1. In **Add Steps**, select **Complete Form**.
+2. In **Step Name**, enter *Clerk review*.
+3. Under **Who can complete this step**, select **Staff only (internal)**.
+4. Add a checkbox question with the **Label** *Insurance certificate is current*.
+5. Select **Add assignees**, pick the clerk's office, and select **Assign & Notify**.
+
+## Send the approval and close the case
+
+1. In **Add Steps**, select **Send Message**.
+2. Pick a sender in **From**.
+3. Add the applicant as the recipient.
+4. In **Subject**, enter *Your sidewalk dining renewal is approved*.
+5. Write the message. Use **Insert Variable** to add the business name from the form.
+6. In **Add Steps**, select **Change Case Status** and set it to Closed.
+
+## Connect the steps
+
+1. Look at the workflow map in the editor.
+2. Find the *Renewal application* step.
+3. Check that the steps run in this order: *Renewal application*, the fee, *Clerk review*, the approval message, and the status change.
+4. Add an arrow between any two steps that aren't connected yet.
+5. Open **Issues to resolve** if it appears, and fix each item it lists.
+
+When every step is connected and **Issues to resolve** is gone, the workflow is ready to test.
+
+## Test the workflow
+
+1. Select **Preview** to see the form the way a restaurant owner will.
+2. Go back to the workflow page and select **Open Test Case**.
+3. Select **Open Test Case** again to confirm.
+4. Fill out the form as a sample restaurant, such as *Main Street Bistro*, and submit it.
+5. Check that the bill, the review task, and the message appear in the test case.
+
+## Publish the workflow
+
+1. Return to the **Workflow Editor**.
+2. Select **Publish**.
+3. Read the warnings in the **Publish Workflow** window. Test cases are removed when you publish.
+4. Select **Proceed to Publish**.
+
+You see "Workflow published successfully." The workflow is live, and restaurant owners can apply. Use **Share or Embed** in the editor to get a link for your website.
+
+## Related articles
+
+- [How workflows work: steps, forms, and publishing](/building-workflows/how-workflows-work-steps-forms-and-publishing)
+- [Build a form with conditional fields](/building-workflows/build-a-form-with-conditional-fields)
+- [Add a payment step](/building-workflows/add-a-payment-step)

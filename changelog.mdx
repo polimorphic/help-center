@@ -1,0 +1,1380 @@
+---
+title: "Changelog"
+description: "Weekly product updates, improvements, and fixes."
+rss: true
+---
+
+<Update label="November 1, 2026" description="Release notes">
+
+### Improvements
+
+**AI assistant**
+
+- **The Assistant chat layout** is cleaner. Attached files show as file cards, the reply box fits on one row with a + button for attachments, and the chat history sidebar puts New chat and Search at the top.
+- **Voice dictation in the Assistant** lets staff speak a prompt instead of typing it. Select the microphone in the chat box, and the transcript appears in the input so you can edit it before sending.
+- **Charts in Assistant documents** are now supported. When the Assistant creates a Word or PDF document, it can add bar, line, pie, and scatter charts, including in documents built from your Word templates.
+
+**Knowledge base**
+
+- **Websites monitored for changes** now also add the PDFs linked from their pages to your knowledge base. Edits to their crawl settings now apply right away.
+
+**Settings**
+
+- **GIS layers and transfer lines** now have their own pages in Settings, so staff can manage them without opening the knowledge base. Both are also searchable from the command palette.
+
+**Cases**
+
+- **Case manager assignment emails** now go out when a case manager assignee block configuration assigns someone, not only when staff assign a case manager by hand.
+- **Send test email** in communication blocks lets staff email the rendered message to themselves to check it before residents receive it. No case is needed.
+
+**Payments**
+
+- **The Payment type filter** on the Transactions page and in the batch action dialog now lists each workflow once and includes payments from every version of it.
+- **Springbrook exports** now include only the gross payment amount. The separate fee row is gone, so staff no longer need to delete it before importing.
+
+### Fixes
+
+**AI assistant**
+
+- **AI chat responses** no longer fail with an "unable to process your request" message during platform updates.
+
+**AI phone and voice**
+
+- **Calls from international or unrecognized phone numbers** are now fully recorded in the AI interaction log.
+
+**Cases**
+
+- **The cases list** now loads even when a contact has an email address in an unusual format. Previously, one such record could leave the list and case count empty.
+- **Public workflow application pages** now show the current stages and fees, and new applications start on the latest live version of the workflow.
+
+</Update>
+
+<Update label="October 25, 2026" description="Release notes">
+
+### New features
+
+**Workflows**
+
+- **Applicant verification** can now be set from Workflow settings. For external workflows, staff choose whether residents must sign in, only provide an email address, or neither before starting a case.
+- **The Start block** now appears in the workflow editor, so staff can see and connect exactly where a workflow begins. The editor flags a Start block with no connection and any block that nothing leads to.
+
+**AI quality testing**
+
+- **FAQs from Health Check results** can now be created in one step. Failed Health Check questions have an FAQ button, so staff can add the missing answer to the knowledge base right away.
+
+**Integrations**
+
+- **Custom integration credentials** can now be updated from the edit window. Staff can enter a new API key, token, or password, test it, and save, such as when moving from sandbox to production keys.
+
+### Improvements
+
+**AI assistant**
+
+- **AI chat, search, and the AI assistant** now show the steps the AI is working through while it prepares an answer.
+- **AI search** now uses the updated search bar and results layout for every organization.
+- **AI answers** no longer draw on unrelated content when no relevant source is found. The AI now tells residents it couldn't find an answer instead.
+
+**AI analytics**
+
+- **Analytics reports** now include total engaged interactions. The monthly interactions chart also labels each channel's count, even when it is small.
+
+**Knowledge base**
+
+- **CivicPlus Agenda Center documents** linked from your website are now picked up during crawls, even when the link doesn't end in .pdf.
+
+**Cases**
+
+- **New cases** now always start on the latest published version of a workflow, whether they come from the resident portal, the AI phone line, an integration, or staff.
+- **Contact records** are now shared across cases, payments, and outbound communication for every organization, so the contact details staff see in one place match everywhere else.
+- **AI case summaries** now describe the person named in the form, even when a staff member filled out the form on a resident's behalf.
+- **Resident application forms** work better with keyboards and screen readers. Focus moves to each new step's heading, and file upload, map, and invite controls are announced and reachable by keyboard.
+
+**Payments**
+
+- **Springbrook exports** now include a Payer name column, so staff can tell which resident or business each row belongs to.
+
+### Fixes
+
+- **AI interactions opened from a contact's page** now load instead of showing an error.
+- **The case Members tab** no longer lists your organization as a member after a communication step sends an email.
+- **The AI interaction log** loads faster when both test and live logs are selected.
+
+</Update>
+
+<Update label="October 18, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **File drag and drop** lets staff drop files straight into the AI assistant chat instead of browsing for them.
+- **Document previews** open Word and PDF files from the AI assistant in a preview window, so staff can check a file before downloading it.
+
+**Knowledge base**
+
+- **Text and Markdown uploads** are now supported in the knowledge base. Staff can add .txt and .md files, and website crawls now pick up linked .txt and .md files too.
+
+**AI phone and voice**
+
+- **Transfer line schedules** now support multiple time ranges on one line, such as separate weekday and weekend hours. Outside those hours, calls go to the line's fallback number.
+
+### Improvements
+
+- **The AI assistant** has a cleaner layout. Suggested prompts now appear as quick chips below the message box, and chat history is easier to scan.
+- **The case Documents tab** now lists documents newest first, with a dropdown to switch the order. Each document also shows the time it was added.
+- **Request311 submissions** made by the AI agent now always include an issue location and keep the resident's mailing address separate. The agent also tells residents when a request type can be submitted anonymously.
+
+### Fixes
+
+**AI assistant**
+
+- **Line breaks in AI chat replies** now display correctly, so formatted content such as letters and addresses keeps its layout.
+
+**Cases**
+
+- **Signatures on the case Details tab** now show as the signed image instead of a file link.
+- **Case PDF previews** in the Share case dialog now load reliably for cases with long emails, so staff can download or send them.
+- **The Cases table** loads quickly again after a slowdown last week.
+
+**Workflows**
+
+- **Contact and location variables in Send message blocks** now fill in correctly. They use the full name or full address unless you pick a specific field.
+
+</Update>
+
+<Update label="October 11, 2026" description="Release notes">
+
+### New features
+
+- **Settings** now brings your organization's configuration into one page for every organization, including users, groups, roles, tags, form letters, channels, integrations, and data retention. Links to older settings pages take staff to the matching section.
+- **Search banner text** can now be customized from the AI customization page, so residents see your own heading above search instead of the default.
+
+### Improvements
+
+**AI assistant**
+
+- **Source citations** in AI answers now list only the sources that directly support the response. Sources without a page title now show a readable name instead of a raw link.
+- **Internal sources** are now used only in the internal AI assistant for staff with Knowledge Base read access. Chat and search return the same public answers to everyone, including logged-in staff.
+- **AI interaction log** now includes email interactions in its default view alongside search, chat, voice, SMS, and WhatsApp.
+
+**AI phone and voice**
+
+- **New AI phone lines** now use Phonic by default, with the Virginia voice and the high intelligence level already selected.
+- **Time-based phone line settings** now add new entries at the top of the list with the highest priority, and the priority shown always matches the list order.
+
+**Workflows**
+
+- **Communication steps** can now send from any email address on your organization's verified domains, not just the default sender.
+- **Add-an-item tables** in forms now show each field's description through a help icon in the column header, so residents know what to enter.
+- **Checkbox questions in add-an-item tables** now appear as a multiselect column, so the table no longer switches to card view.
+
+### Fixes
+
+- **Case duration** for closed and deleted cases now stops counting at the case's last activity instead of continuing to grow.
+- **Address search** now suggests addresses near your organization first.
+- **Organization logos in emails** now display at the correct size in Outlook.
+- **Adding an existing contact to a group** now works from the contact group page.
+
+</Update>
+
+<Update label="October 4, 2026" description="Release notes">
+
+### New features
+
+- **Branching workflows** are now available to all organizations. Workflow builders can connect a step to more than one next step, choose how parallel paths join back together, and add conditions to connectors so each case follows the right path.
+
+### Improvements
+
+**Cases**
+
+- **The updated case view** is now the only case view for all organizations. The option to switch back to the legacy layout has been removed.
+- **Case assignees** now get an email notification by default when a resident replies to an email sent from a case, so replies are not missed.
+- **Date filter presets** now offer Past 7 days in place of This week, covering today and the six days before it. The change applies to case filters, the AI interaction log, and other date filters.
+
+**Workflows**
+
+- **Publishing a workflow** is now blocked when a communication step uses a sender whose email domain has not been verified. This prevents publishing a workflow whose emails would not send.
+- **AI pre-review on forms** now checks the files residents upload, not just their typed answers, so residents can fix problems with attachments before they submit.
+
+**AI assistant**
+
+- **Links in AI responses** are now checked against your knowledge base sources before residents see them. Any link that does not match a source is removed, and the surrounding text stays.
+
+**Knowledge base**
+
+- **Document uploads** no longer have a 100 MB limit per batch. Staff can now upload large documents and large batches directly to the knowledge base.
+
+**AI analytics**
+
+- **Call charts** now appear in the All view whenever your organization had phone calls in the selected period, not only when Voice is selected.
+
+**Integrations**
+
+- **Cases sent to Request311** now include map coordinates along with the address, so service requests land at the right location even when Request311 cannot read the address.
+
+### Fixes
+
+**Workflows**
+
+- **Copying a workflow or creating a new draft version** now keeps communication step settings, document generation settings, form button labels, submission confirmations, and payment account settings.
+
+**Cases**
+
+- **Group access** granted on cases and workflows now applies to every member of the group, and membership changes take effect right away.
+- **Pinned fields** appear again beneath the progress bar in the cases table.
+- **Forms opened from a new case** no longer reopen when staff switch tabs, and submitting a form no longer opens the next one on its own.
+
+**AI assistant**
+
+- **Email requests to the AI assistant** now produce an email draft instead of a document.
+
+**AI phone and voice**
+
+- **Phone applications** now save the caller's actual phone number to the case, instead of a number captured during the conversation that could be wrong.
+
+</Update>
+
+<Update label="September 27, 2026" description="Release notes">
+
+### New features
+
+- **Direct case access** is now available to all organizations. Staff can share a case with a specific person from the workflow page, the workflow editor sidebar, or the Access action on a case, without adding them to a group.
+- **Analytics export** is now available to every organization with analytics access. Download your AI analytics as a file for reporting or further review.
+- **AI email handoff** routes messages the AI cannot resolve to a staff address your organization configures. Staff are copied on the reply, later messages in that thread go straight to them, and the resident is told a staff member will follow up.
+
+### Improvements
+
+**Cases**
+
+- **Case date filters** (Created, Next due, and Closed) now open with presets for Today, Yesterday, This week, and This month, with a custom range still available.
+- **Cases table** now shows live workflow cases by default when it opens. Test cases appear only when the Include test cases filter is turned on.
+- **Case communication previews** in the staff review step now list every document the send will attach, including case documents selected in the workflow and documents chosen by AI.
+
+**AI assistant**
+
+- **AI answers** now keep every matching passage from a document when several searches return different sections of it, so responses draw on the full source.
+- **Meetings, events, and other structured records** found by the AI now appear in its sources and citations, including in Health check results.
+- **AI digest emails** are now sent to more organizations, and organizations with no resident activity in the past week no longer receive an empty digest.
+
+**Organization settings**
+
+- **Cross-organization roles** can now be added to and removed from your own groups like any other role, while the organization that owns the role still controls its name and permissions.
+- **Copying a group** can now include its SSO group mappings, so a copied group keeps the same single sign-on assignments.
+
+**Contacts**
+
+- **Text conversations with the AI** now appear in Contacts as unverified interactions, so staff can see text activity alongside calls and chats.
+
+### Fixes
+
+**Cases**
+
+- **Case emails sent from a communication block** now go to the email address entered in the case's contact step instead of the person's stored primary email.
+- **The From address in the case feed email review** can now be selected, so communication blocks without a configured sender can still be sent.
+- **Residents waiting on your organization** now see a message explaining that the next step is with staff, instead of a loading spinner that never finished.
+- **Sorted rows in add-an-item tables** on case forms now keep their order after submitting and when the form is reopened.
+
+**AI assistant**
+
+- **AI-drafted case messages** no longer include bracketed placeholders such as a blank name or organization in the sign-off, and multi-line messages keep their line breaks.
+- **Health check results** now appear when you open a run that is still in progress, and category cards fill in as scenarios finish.
+
+**Knowledge base**
+
+- **Municipal Code Online sources** now load their content correctly. Some crawls previously completed with no content ingested.
+
+</Update>
+
+<Update label="September 20, 2026" description="Release notes">
+
+### New features
+
+- **Case activity log** now shows a line item for every tracked case event, including tag changes, requester and manager changes, tasks, file uploads, form submissions, payments, and shares. Each entry links to the person, document, or payment it refers to, so staff can see the full history of a case in one place.
+- **Role steps in workflows** can now set the case manager as well as the case requester. Pick the role from a dropdown when configuring the step, and the assignment is applied automatically when a case reaches it.
+
+### Improvements
+
+**Cases**
+
+- **Cases table** now loads faster. The next due date and assignee columns are fetched with a focused query, and the staff list used across the product returns in seconds rather than tens of seconds for large organizations.
+- **Case links** now remember which tab was open. Share a case URL and the recipient lands on the same tab, such as Activity or Documents.
+- **Location search** in case and form location steps now suggests businesses and landmarks by name, such as a store or a park, and returns the exact address of the selection.
+
+**AI assistant**
+
+- **Answer citations** only include sources that residents can open. Sources without a public link are still used to answer but no longer appear as citations.
+- **Feedback buttons** on chat and search answers now work with screen readers. The selected thumbs up or thumbs down is announced and shown with a filled icon.
+
+**AI quality testing**
+
+- **Health check results** now attribute each issue and warning to the specific question that caused it, so staff can see which question in a multi-question scenario needs attention instead of seeing the same findings repeated for every question.
+
+**AI analytics**
+
+- **Analytics report downloads** now match the charts shown on the analytics page, including volume by hour, call distribution, transfer lines, and language distribution.
+- **Transfer line reporting** in front desk analytics now labels calls sent to your default transfer number as "Default" instead of grouping them under "Unmatched."
+
+**Organization settings**
+
+- **Password requirements** can now be set per organization, including minimum length and required character types. The password checklist shown when staff set or reset a password reflects your organization's rules.
+- **Groups managed by single sign-on** are now locked in Access Control. Members are shown with a lock icon and cannot be added, removed, or deleted in Polimorphic, so changes are only made in your identity provider.
+
+### Fixes
+
+- **Communication step emails** now send and preview correctly when the message body contains hidden formatting characters pasted from other tools.
+- **Knowledge base crawls** scoped to a single subdomain no longer pick up pages from other subdomains when revisiting a site.
+- **Section descriptions** in the form builder and on resident-facing forms now wrap within the page instead of extending off the edge when text was pasted from another document.
+
+</Update>
+
+<Update label="September 13, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **Image attachments** now show as inline previews in Assistant chat and in the interaction log. The assistant also keeps each image tied to the message it was sent with, so earlier uploads are no longer confused with new ones.
+
+**Knowledge base**
+
+- **Internal or external availability** can now be set on FAQs and on whole domains, not just individual pages. Set a domain to internal and every page from that site is available only to your staff assistant, including pages already crawled.
+
+**Workflows**
+
+- **Calculated values in communication steps.** Workflow editors can now insert an existing expression into the body of an email or letter, so messages can include totals, dates, and other computed values.
+- **Due dates on communication steps.** When a communication step is set to manual review with an assignee, you can now set a time to complete, and the review task and step carry that due date.
+- **Case documents on AI-drafted messages.** AI-generated communication steps can now attach specific case documents in addition to the ones AI chooses.
+
+**Cases**
+
+- **Notification emails** for assigned, updated, and overdue cases now list the pinned fields from completed forms, so staff can identify a case from the email without opening it.
+
+**Payments**
+
+- **Stripe onboarding** now sets up new accounts as government entities and shows your team what Stripe will ask for before handing off to Stripe.
+
+### Improvements
+
+- **Language detection** for AI chat now recognizes messages written without accent marks, so residents typing in languages such as Slovak or Czech without diacritics get a reply in their language instead of English.
+- **Workspace administrators** can now view and manage every group in their workspace, including groups set up at the organization level.
+
+### Fixes
+
+- **Single sign-on with SAML** now works for staff whose identity provider requires multifactor, certificate, or passwordless authentication. Those users previously saw an authentication method error at sign-in.
+- **Phone extensions** entered on a contact record now display on the contact.
+- **Case printing** now works for cases whose internal, staff-only section runs longer than one page.
+- **Date-only fields** on the case Details tab now show the entered date instead of the day before in US time zones.
+- **Payment steps** can now be deleted from a workflow. Steps with completed Stripe payments stay in place to protect payment history.
+
+</Update>
+
+<Update label="September 6, 2026" description="Release notes">
+
+### New features
+
+**Cases**
+
+- **Case exports** now include the case's documents alongside the case PDF in a single ZIP download, so staff can hand off a complete case record in one step.
+- **Communication steps** can now attach the case's own documents automatically. Choose which document or file upload steps to pull from, or let AI select the documents that fit the message.
+- **Inbound email notifications** can be turned on per workflow. When a resident replies to a case email address, assigned staff are notified, falling back to the case manager.
+
+**Contacts and communication**
+
+- **Contact records** can now be deleted, so staff can clean up duplicates and records created in error.
+
+**Workflows**
+
+- **Checkbox inputs** now render as real checkboxes on generated Word documents, checked or unchecked based on the case answer.
+
+**AI quality testing**
+
+- **Health check** can now run against a single question category instead of the full question bank, so staff can retest one topic after a knowledge base change. Category runs are left out of the pass rate trend.
+
+**Knowledge base**
+
+- **Search widget appearance** is now configurable. Hide the banner or header, set your own header image, and choose between the tabbed and combined results layouts.
+
+**Maps and GIS**
+
+- **Outbound communication recipients** can now be filtered by feature properties within a GIS layer, so a message can go to a specific subset of parcels or districts instead of the whole layer.
+
+### Improvements
+
+- **Bulk archiving** is now on the workflows list. Select several workflows and archive them together.
+- **Insert variable** in the document template editor now turns highlighted text into a variable and inserts existing variables at the cursor, including inside tables.
+- **Case printing** now prints long descriptions and text answers inline instead of moving them to appendices, and fields print in the same order as the case feed. Printing is available to all staff.
+- **All interactions** is now an option on the analytics page, so staff can review activity across every channel in one view.
+
+### Fixes
+
+- **AI answers** no longer send a placeholder "let me look that up" reply, and no longer offer contact details that did not come from your organization's own information.
+- **Transfer line extensions** are now kept on a phone line's default transfer number, so calls reach the right extension.
+- **Leave a note** is available again in the case feed for staff who were missing it.
+- **Bill steps** can now be assigned and reassigned from the case feed to-do section.
+- **Staff send previews** now show the case's submitted values in place of inline variables instead of the variable label.
+
+</Update>
+
+<Update label="August 30, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **Document generation in the assistant** lets staff ask the assistant to produce a Word or PDF document from a conversation. The finished file appears at the end of the response, ready to download.
+
+**Cases**
+
+- **Case communication emails** can now be sent from a staff member's verified email address. Teams without a shared department address can start sending communications from a workflow right away.
+- **Case handle** is now available in the formula builder, so staff can reference a case's handle in workflow logic and generated documents.
+
+**Organization settings**
+
+- **Email domains** is a new tab in organization settings where your team can add a sending domain, start verification, copy the DNS records to install, and check status without contacting support.
+
+### Improvements
+
+**AI assistant**
+
+- **Assistant answers** start appearing sooner in chat and search. Links in an answer now come from the sources that were actually retrieved, so made-up links are much less likely.
+
+**AI phone and voice**
+
+- **Callers are no longer asked for their name** when starting a request by phone. The name on the resulting record comes from the request itself, which is more accurate than what the caller spelled out.
+
+**AI quality testing**
+
+- **Health check runs** can be labeled and annotated when you start them, so staff can tell one run from another later. Runs configured differently from your live setup are marked as experiments and left out of the pass-rate trend.
+
+**AI analytics**
+
+- **Organization filtering** in the AI interaction log now accepts more than one organization at a time. For workspaces with several organizations, the organization picker also sits on each AI page instead of in the sidebar.
+
+**Cases**
+
+- **Case progress on the dashboard** no longer counts steps a case skipped because of the path it took, so a case that follows one branch can reach 100 percent. Notification emails count steps the same way.
+- **Contact activity** is now a single list sorted newest first, with pagination once there are more than ten entries. Each entry opens from anywhere on the card.
+
+**Workflows**
+
+- **Auto-map on the document generation block** now matches template variables to workflow inputs by meaning, so a variable such as DOB lines up with a Date of Birth input.
+
+### Fixes
+
+**Workflows**
+
+- **Generated Word documents** open correctly in Word and other editors.
+- **Removing a step assignment** works when several steps share the same assignee formula.
+- **Dragging fields in the form builder** no longer scrolls the page back to the top.
+
+**Cases**
+
+- **AI-drafted communication emails** keep their paragraphs and lists instead of collapsing into one block of text.
+- **AI-drafted messages** no longer leave bracketed placeholders in the text for staff to fill in.
+
+**Knowledge base**
+
+- **Monitored websites** now report completed checks, so pages that changed on your site are picked up as knowledge base sources.
+
+</Update>
+
+<Update label="August 23, 2026" description="Release notes">
+
+### New features
+
+**Workflows**
+
+- **Case opened and case closed emails** can now be turned off per workflow in workflow settings. Use this when a workflow already sends its own communications, so applicants do not get duplicate emails.
+
+**AI phone and voice**
+
+- **Residents can text STOP** to opt out of an agency's text messages and START to opt back in. Opted-out numbers are removed from outbound text recipients and are not texted.
+
+**AI quality testing**
+
+- **Notes on health check runs** let your team record what a run was testing, such as a prompt change or a new source. The note appears with the run's results and in the pass rate trend.
+
+### Improvements
+
+**Cases**
+
+- **Downloading cases** now requires the cases export permission instead of read access. Staff who only view cases can no longer export them.
+
+**Workflows**
+
+- **AI-generated forms** now use sentence case for questions and labels instead of copying all-caps text from the source PDF.
+
+**AI assistant**
+
+- **Search** now returns a direct answer instead of asking a clarifying question. Search is a single question at a time, so follow-up prompts left residents without an answer.
+
+**AI quality testing**
+
+- **AI test logs** are now available to all staff with log access, including the filter for test interactions. This was previously restricted.
+
+**Knowledge base**
+
+- **CivicPlus credentials** can be removed from a crawl task without losing its date range and folder selections. Saved credentials now show clearly as saved rather than looking empty.
+
+**Payments**
+
+- **The payout batches page** now searches, filters, and pages on the server, so it loads quickly for organizations with large payment volumes. Payment details load when you open a payout.
+
+**Outbound communication**
+
+- **Email campaigns** can now be sent from a staff member's own verified email address, not just the organization address. Staff with a verified address can create a campaign without an admin setting one up first.
+
+### Fixes
+
+**Cases**
+
+- **Bulk case downloads** now use the filters applied on the workflow's case list, so a PDF or TIFF download matches what you selected.
+- **Documents gated on a payment** can now be generated once the bill is paid or waived. They previously stayed disabled after payment.
+
+**Workflows**
+
+- **AI-generated dropdown and multiple choice questions** now include their answer options instead of rendering as empty lists.
+- **Dragging fields in the form builder** now scrolls the form as you approach the bottom of the view, and starting a drag no longer jumps the form to the top.
+
+**Contacts**
+
+- **Contact imports** now work with spreadsheet exports that have empty columns after the last header. These files previously produced an unusable column mapping step.
+
+**Organization settings**
+
+- **Removing an email address** from organization settings now works for staff with delete permission. There was previously no way to remove one.
+
+</Update>
+
+<Update label="August 16, 2026" description="Release notes">
+
+### New features
+
+**Knowledge base**
+
+- **Document filters and bulk archiving** are now on the knowledge base Documents tab. Staff can filter by title, URL, and published or archived state, then archive or unarchive many documents at once.
+
+**Payments**
+
+- **Staff now have the ability to take card reader payments.** Take in-person payments through a connected Stripe reader from the same payment screen your team already uses. Reach out to your CSM if you're interested in buying a physical card reader to process payments.
+
+**Workflows**
+
+- **The Send Message block** is now available in every workflow, and can automate sending either pre-written or AI-generated messages to chosen recipients.
+
+**Contacts and communication**
+
+- **Contact type** can now be edited on an existing contact record. Contacts created from calls, chats, and emails no longer stay labeled as a person.
+- **Form letter attachments** can be added and previewed in the form letter editor. Saving a form letter no longer clears files that were already attached.
+
+### Improvements
+
+**AI assistant**
+
+- **AI assistant answers** now come back faster. Knowledge searches run at the same time instead of one after another, repeat questions reuse recent search results, and logging happens after the answer is delivered.
+- **Page loads** are faster across the product. Large document-editing code is now downloaded only when staff open a document template preview.
+
+**AI quality testing**
+
+- **AI interaction log filters** now read only the newest evaluation for each interaction, so scores from earlier rubric runs no longer match. Selecting specific scores returns exactly those scores.
+
+**Knowledge base**
+
+- **Monthly and quarterly refresh schedules** now work for monitored websites, so longer crawl cadences stay on schedule instead of failing to start.
+
+**Cases**
+
+- **Case subject** is now required when staff create a case manually. Cases that never had a name now show their created date instead of a generic label.
+
+### Fixes
+
+**Cases**
+
+- **Assignment emails** name the step that was actually assigned.
+- **Completed forms and bills** now register as complete in case sorting, filtering, and last-action displays.
+
+**Contacts and communication**
+
+- **Contact activity** shows only that contact's calls. Contacts without a phone number previously listed unrelated voice calls.
+
+**AI assistant**
+
+- **Links in AI assistant answers** point to real pages. The assistant no longer adds IDs or path segments to a URL.
+
+**AI quality testing**
+
+- **The interactions sidebar in Health Check** stays in place when a filter returns no responses, so staff can change the filter without reloading the page.
+
+</Update>
+
+<Update label="August 9, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **Chat welcome, language, and disclaimer messages** are now editable on the chat and search customization page. Your team can adjust the text residents see without asking Polimorphic to change it.
+- **Case ID search in the internal assistant** lets staff ask about a case by the ID they see in the URL or on the case, instead of describing it.
+
+**Knowledge base**
+
+- **Word, PowerPoint, and Excel uploads** are now supported as sources, including older .doc and .ppt files. Tables, charts, and speaker notes are read into the content the AI can answer from.
+
+**Integrations**
+
+- **Identity verification on custom API integrations** lets you require a caller to match fields such as email or last name against the record before the AI returns any details. Set it per endpoint, with exact or agent-assisted matching.
+
+**Organization settings**
+
+- **SSO email domains** can now be set on the single sign-on settings page. Once a domain is listed, staff on that domain can use the Sign in with Microsoft or Okta buttons on the login page.
+- **Private contact books** are now an option for sub-organizations. Choose between the shared workspace contact book and an independent contact book for that organization alone.
+
+**Outbound communication**
+
+- **Contacts inside a drawn map area** now appear as clickable markers when you draw a circle or polygon to pick recipients, so staff can see exactly who is included before sending.
+
+### Improvements
+
+**Cases**
+
+- **The case list** loads faster, including case counts, for organizations with large case volumes.
+- **Notification emails** no longer list the form inputs that were submitted. The emails are shorter and easier to read.
+
+**Workflows**
+
+- **Workflow validation issues** now show as a labeled button with the number of open issues, and publishing is blocked until they are resolved. This prevents a workflow with known problems from going live.
+
+**AI assistant**
+
+- **Answers start about twice as fast** in chat and search. Residents see the first words of a response sooner.
+
+**AI phone and voice**
+
+- **Transfers to a named staff member** now succeed more often when the caller's name is misheard. The system matches on how names sound and asks the caller to confirm when two names are close.
+- **Transfer line options** are more varied. A single line with a long service list no longer crowds out other lines that also match what the caller asked for.
+
+**AI quality testing**
+
+- **Health check grading** no longer marks an answer as inferred when the supporting evidence sits late in a long page. Results now reflect the full source content.
+
+**Organization settings**
+
+- **Group and role names** can be edited directly in access control. Changes save with the rest of the drawer, and cancelling asks before discarding unsaved edits.
+
+**Sign-in**
+
+- **Login verification codes** can now be resent, and expired or incorrect codes show a clear message instead of failing silently.
+
+### Fixes
+
+**AI phone and voice**
+
+- **Off-hours transfer lines** are no longer dialed. When a line is closed and has no alternate number, the caller is told it is outside business hours instead of being sent to an unattended phone.
+
+**Integrations**
+
+- **SharePoint setup** can be retried after a failed attempt. A failed connection no longer leaves a partial record that blocked every retry with a conflict error.
+
+**Cases**
+
+- **AI case summaries** now generate for cases that are not part of a workflow. These cases previously showed no summary at all.
+- **Copied values from a revised form** now match the revised number of repeated sections. If a form is resubmitted with more entries, later forms populate all of them.
+
+**AI analytics**
+
+- **The satisfaction rate** now uses the most recent evaluation of each interaction, so re-evaluated conversations are no longer counted from outdated results.
+
+**Sign-in**
+
+- **Single sign-on error messages** now appear on the login screen. Staff previously landed on a Page Not Found screen with no explanation of what went wrong.
+
+**Across the app**
+
+- **Deep links that include an organization** now open with that organization and workspace selected in the sidebar and top bar.
+
+</Update>
+
+<Update label="August 2, 2026" description="Release notes">
+
+### New features
+
+**Payments**
+
+- **Processing fee coverage** is now a setting on the payments settings page. Choose whether the payer covers the card processing fee or your organization absorbs it, and the amount residents are charged updates to match.
+- **Payouts** now account for that choice. When your organization covers the fee, the fee is netted out of the payout so your deposits reconcile correctly.
+- **Accounting codes per line item** let you set an AR code and a distribution code on each charge in a payment step, instead of one code for the whole bill. Bill-level codes stay as the default for any line item you leave blank.
+- **Polimorphic (line item) export** is a new payment export format with one row per charge and that charge's AR code.
+
+**Knowledge base**
+
+- **Access type** replaces the Show source and Use source columns. Every source is now marked External or Internal, and internal sources are used only by staff-facing tools so private information is never shown to residents.
+
+**Integrations**
+
+- **Cityworks service requests** are now created when a resident completes a form over the phone, matching what already happened for online submissions.
+
+### Improvements
+
+**Knowledge base**
+
+- **Crawl cadence changes** take effect right away. Editing how often a site is crawled no longer waits for the next scheduled run.
+- **Email addresses in website links** are now kept in the text the AI searches, so the assistant can give residents the right contact address.
+
+**AI assistant**
+
+- **Phone and chat conversations** no longer ask residents for a permit or account number when your organization has no permitting integration connected.
+
+**AI analytics**
+
+- **The front desk dashboard** loads significantly faster, especially for organizations with a large volume of AI interactions.
+
+**Workflows and forms**
+
+- **Formulas inserted into another formula** now show by name instead of being expanded inline. Click the name to view the referenced formula, then use Back to return.
+
+### Fixes
+
+**Sign-in and access**
+
+- **Linking an SSO sign-in to an existing account** now works. Staff whose email already had a Polimorphic password are taken to a confirmation page instead of Page Not Found.
+- **SSO settings** now save when you select break-glass users. Previously staff who belonged to the organization through a group were rejected on save.
+- **Case log participation** no longer grants full case access. Staff given access to a single step on a case stay limited to that step when they add a log.
+
+**Cases and forms**
+
+- **Drag and drop in the form builder** now drops elements where you release them, and the drag preview follows your cursor.
+
+**Contacts**
+
+- **Contacts without a name** now open. The page falls back to the contact's email or phone number for the title.
+
+**AI assistant**
+
+- **Answers during busy periods** are more reliable. Conversations that previously returned an occasional error under heavy simultaneous traffic now complete normally.
+
+**Across the app**
+
+- **Pages whose content fails to load** no longer reload in a loop. The page recovers after a single retry.
+
+</Update>
+
+<Update label="July 26, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **Response feedback** now lets residents and staff explain a thumbs-down rating in a short comment in test mode. Your team can read those comments next to the conversation in the AI interaction log.
+
+**Knowledge base**
+
+- **Crawl depth** is now a setting on a crawl task, so you can control how far the crawler follows links on a site.
+
+**Organization settings**
+
+- **Data retention** now supports a separate retention period for each AI surface, such as chat, search, and voice. The data retention page has also been updated to match the rest of the platform.
+
+**Integrations**
+
+- **Tyler EnerGov permitting** is now available as a hosted connection. Staff can pull permit details into Polimorphic without opening a second system.
+
+### Improvements
+
+**AI assistant**
+
+- **Answer reliability** is improved for the AI assistant. A model upgrade and error handling work removed most cases where a question came back as a generic non-answer.
+- **Source citations** are now attached to answers more consistently, so residents and staff can check where an answer came from.
+
+**Knowledge base**
+
+- **Meeting agendas and minutes from CivicClerk** are now processed with document text extraction. The assistant can answer questions about what those documents actually say.
+
+**Integrations**
+
+- **Utility budget balance lookups** now work with an account number and SSN alone. Residents no longer need a location number to get a budget billing balance.
+
+**AI analytics**
+
+- **Interaction language and engagement counts** are now stored with the interaction record. Analytics stay accurate after a retention policy removes transcripts.
+
+**Cases**
+
+- **The cases dashboard** loads faster for staff working with a large number of cases.
+
+### Fixes
+
+**AI quality testing**
+
+- **Sources used in health check results** now appear for every scenario, so results no longer show a false missing sources warning.
+- **Health check result links** open the scenario you clicked instead of returning you to the health check dashboard.
+
+**Cases**
+
+- **Future payment steps in an application** now tell residents the bill has not been created yet, instead of showing an error.
+- **Ad hoc assignment emails** send staff to the case itself rather than the resident application view.
+
+**Payments**
+
+- **Payment reports for a custom date range** now include payments made on the end date, so totals match Stripe.
+
+**Maps and GIS**
+
+- **Work orders sent to Cityworks** now use the coordinate system Cityworks expects, so locations land in the right place.
+
+</Update>
+
+<Update label="July 19, 2026" description="Release notes">
+
+### New features
+
+- **Payment export format** can now be set on the payments settings page. Your team picks the ERP format that matches your finance system, such as Tyler Incode, Springbrook, Caselle, Tyler Munis, or Southern, so payment exports come out in the right layout.
+- **AI conversation language breakdown** now appears on the AI analytics page. Staff and managers can see how many AI conversations happen in each language to understand multilingual usage.
+- **Knowledge base documents** now show the key details the AI pulls from each page. A new Entities tab and a column in the documents list let your team review and refresh what was extracted, alongside the existing chunks view.
+
+### Improvements
+
+- **Domain crawling** now offers an option to crawl an entire website, including pages that are not linked from the starting page. This helps the knowledge base cover more of your site's content.
+- **Workflow editor** is now the standard editor for every organization. The older process editor has been retired.
+- **Form letters page** now shows every form letter across your workspace by default, with the organization dropdown acting as a filter. Previously the page opened empty until you picked an organization.
+
+### Fixes
+
+**Cases**
+
+- **Case application inputs** are visible to residents again. A permissions check had hidden all inputs on the application view for some constituents.
+- **Ad hoc shared workflows** now appear correctly for staff, including the organization name and the document download step.
+
+**AI quality testing**
+
+- **Health checks** on large knowledge bases now finish instead of getting stuck in progress.
+
+**AI analytics**
+
+- **Large AI interaction log exports** now download reliably instead of failing on big date ranges.
+
+**Account settings**
+
+- **Signing out** from a settings page now returns you to the login screen instead of hanging on a spinner.
+
+</Update>
+
+<Update label="July 12, 2026" description="Release notes">
+
+### New features
+
+- **Self-service single sign-on setup** lets your IT team connect Microsoft Entra and turn on single sign-on from the settings page, without help from Polimorphic. A guided wizard walks through the setup, and you can copy a sign-in link to share with staff.
+- **SSO authentication modes** let IT admins require single sign-on for their organization, allow both password and single sign-on, or keep password-only sign-in. Break-glass accounts can be designated so no one gets locked out if the identity provider is unavailable.
+- **SSO group mapping** lets IT admins map Microsoft Entra groups to Polimorphic roles by picking from a searchable list of their groups instead of pasting group IDs. Group membership syncs automatically on each sign-in.
+
+### Improvements
+
+- **Front desk analytics** now display in your organization's local time zone, so interactions land in the correct day and hour instead of being counted in UTC.
+- **Voice transfer analytics** now show the top transfer destinations as a bar chart, with abandoned and transferred call rates in a pie chart, so staff can read call outcomes at a glance.
+- **Resident account passwords** now must meet strength requirements when residents set, change, or reset a password. Residents see clear guidance if a password is too weak.
+
+### Fixes
+
+**Cases**
+
+- **Case PDF downloads** now work for cases with long descriptions. Descriptions over 500 characters previously stopped the PDF from generating.
+- **Form letter selector** now lets you change your choice after picking a form letter, instead of locking to the first option you selected.
+
+**Maps and GIS**
+
+- **GIS layer imports** now handle files that use non-standard coordinate systems. Features with invalid coordinates are filtered out with a warning instead of crashing the map viewer, and the reason is included in the import email.
+
+**Integrations**
+
+- **Custom integration endpoints** now keep their request body when you save, instead of clearing it.
+
+**Staff navigation**
+
+- **The staff sidebar and command palette** no longer appear for logged-out visitors or resident accounts.
+
+</Update>
+
+<Update label="July 5, 2026" description="Release notes">
+
+### Improvements
+
+- **Case search in the command palette** now returns results faster when staff look up cases from anywhere in the app.
+
+### Fixes
+
+- **Voice applications** now save the caller's name to their contact when the AI captures it during a call.
+- **AI interaction log exports** now send the download email reliably when staff request one.
+
+</Update>
+
+<Update label="June 28, 2026" description="Release notes">
+
+### New features
+
+- **Bulk download by step** lets staff download a specific workflow step across all cases at once, rather than opening each case individually. Available from the workflow page in both PDF and TIFF formats.
+- **Skip documents during crawls** adds an option in the advanced crawl settings to exclude linked PDFs and other documents from a web crawl. This prevents outdated or irrelevant documents from being ingested into the knowledge base.
+
+### Improvements
+
+**AI assistant**
+
+- **AI response speed** is now faster for complex questions. The assistant searches multiple knowledge sources at the same time instead of one after another.
+- **Off-topic responses** are now deflected consistently, even in longer conversations. Previously, extended back-and-forth could cause the assistant to answer unrelated questions using outside sources.
+
+**Outbound communication**
+
+- **Sent by tracking** now records and displays which staff member sent or scheduled each outbound communication.
+
+### Fixes
+
+**Payments**
+
+- **Payment summary amounts** now display correctly on the payments page. Previously, certain calculations could show $0 when payment data existed.
+- **Payment compliance metrics** now match between the list view and the detail view for individual bills.
+
+**AI quality testing**
+
+- **Uncategorized interactions** in the quality report now display their results when selected. Previously, the count appeared but selecting the category showed an empty list.
+
+**Cases**
+
+- **Contact information in submitted forms** is now visible to residents after they refresh the page. Previously, residents who filled out a contact step could not see their own data after submitting.
+- **Workflow search results** now preserve relevance ordering from the server instead of re-sorting alphabetically on the page.
+
+</Update>
+
+<Update label="June 21, 2026" description="Release notes">
+
+### New features
+
+**AI analytics**
+
+- **AI analytics page** now includes new charts for interaction trends and category breakdowns, with a custom date range selector so your team can analyze any time period.
+
+**Integrations**
+
+- **Browser-based integrations** let your team connect to third-party systems that do not offer an API. Staff can configure automated browser actions (such as navigating pages, clicking elements, and extracting data) directly from the integrations settings page.
+- **Okta SSO** is now available as a dedicated sign-in option on the login page for organizations that use Okta as their identity provider.
+
+### Improvements
+
+**AI assistant**
+
+- **AI assistant** responses are now more accurate, especially for complex or multi-topic questions. A redesigned pipeline separates retrieval from answer generation so each step is more focused.
+- **AI assistant logs** are now accessible from a dedicated tab in organization settings. Staff no longer need to manually filter the main interaction log to find assistant conversations.
+
+**Cases**
+
+- **Open Case dialog** now combines manual case creation and workflow selection into a single screen, replacing the previous separate entry points.
+
+**Knowledge base**
+
+- **Crawl task settings** can now be edited directly from the domain tab, so staff can update include/exclude paths and tags without recreating a crawl.
+- **PDF documents** linked on crawled web pages are now automatically detected and added to the knowledge base during crawls.
+
+### Fixes
+
+**Cases**
+
+- **Assignee chips** in the cases table no longer appear duplicated when a staff member is assigned to multiple tasks on the same case.
+- **Contact as case requestor** is now correctly set across all entry points when opening a case from a contact page, including through the workflow selection flow.
+- **Add member dropdown** in organization permissions now shows email alongside name, preventing confusion from duplicate or unnamed entries.
+
+**Workflows**
+
+- **Form step deletion** with nested sections no longer causes an error.
+- **Form step editor** content no longer gets cut off at the bottom of the screen.
+- **Workspace switching** while on a detail page (such as a workflow editor) now navigates to the correct list page instead of showing an error.
+
+</Update>
+
+<Update label="June 14, 2026" description="Release notes">
+
+### New features
+
+- **Command palette search** lets staff find cases, workflows, and contacts without leaving the current page. Open the palette with Ctrl+K (Cmd+K on Mac) and start typing.
+- **Scheduled outbound communications** let staff set a future send date and time for an email or SMS blast. Scheduled sends can be canceled before they go out.
+
+### Improvements
+
+**AI assistant**
+
+- **Internal AI assistant** is now available for organizations on the Deliver and Unify tiers.
+- **Follow-up answers** in the AI assistant are more accurate. The assistant now uses information already in the conversation before searching again.
+
+**Knowledge base**
+
+- **Processing status** now appears on the links and documents table, so staff can see which items have been indexed, are in progress, or failed.
+- **View sources** in AI responses now includes all referenced pages, not just individual text segments.
+
+**Cases**
+
+- **Copy-down values** now support date fields in workflow forms.
+
+**Payments**
+
+- **Payment page** now shows only current charges by default. A "Show History" toggle reveals past transactions.
+
+### Fixes
+
+**AI phone and voice**
+
+- **AI phone responses** no longer read out internal citation data during calls.
+- **Optional fields** on the AI phone line can now be skipped. Callers are no longer forced to provide optional information before completing a request.
+
+**Cases**
+
+- **Closing cases from the case dashboard** works again. Staff can close a case directly from the table without opening it.
+- **Signature fields** are no longer cleared when submitting a form with AI pre-review enabled.
+- **Optional identity fields** can now be edited without incorrectly triggering a "required fields" error.
+
+</Update>
+
+<Update label="June 7, 2026" description="Release notes">
+
+### New features
+
+- **Automatic sign-out for SSO sessions** warns staff five minutes before their session expires. When time runs out, a sign-out overlay appears and the session ends.
+- **Quality test run details** now include a search bar and an outcome filter (pass, fail, unevaluated) to help staff find specific test results.
+- **AI interaction log search by phone number** lets staff find all calls and text messages associated with a specific number.
+
+### Improvements
+
+**Navigation**
+
+- **"Processes" are now called "Workflows"** throughout the interface. "Mass Communications" is now "Outbound Communications."
+
+**AI phone and voice**
+
+- **AI phone and assistant** no longer ask callers for their address when no relevant location data exists for the question. The AI answers with general information instead.
+
+**AI interaction log**
+
+- **Search in the AI interaction log** is faster and smoother, especially for organizations with large interaction volumes.
+
+**Knowledge base**
+
+- **AI responses** no longer surface draft workflows. Only live, published workflows appear in answers to residents.
+
+**Contacts**
+
+- **Contacts map view** now uses clickable, clustered markers. Clicking a marker opens a popup card with the contact's name, email, phone, and address.
+
+**AI assistant**
+
+- **SharePoint reconnection prompts** now appear in the AI assistant when access has expired, so staff can re-authenticate without leaving the conversation.
+
+**Integrations**
+
+- **Cityworks integration** now supports additional service request types, including new close and status update behaviors.
+
+### Fixes
+
+**AI phone and voice**
+
+- **Text messaging and location lookups** from the AI phone line now work correctly during calls, including when texting a link to a workflow.
+- **Time picker** in AI phone line schedule configuration works again for setting start and end times.
+
+**Cases**
+
+- **Organization requester details** now populate correctly when selected in a case identity step.
+
+**Contacts**
+
+- **Contact notes** can now be edited and deleted without creating duplicates.
+
+</Update>
+
+<Update label="May 31, 2026" description="Release notes">
+
+### Improvements
+
+**Cases**
+
+- **Case map view** now uses status-based color coding with an updated legend and is available to all organizations.
+- **Saved filter views** on the case dashboard now offer a dropdown with two options: update the current view or save filters as a new view.
+
+**AI assistant**
+
+- **Chat guardrails** now prevent residents from overriding the AI assistant's response style or tone during a conversation.
+
+### Fixes
+
+**Cases**
+
+- **Last Action column** on the case dashboard now counts calendar days correctly instead of rounding to 24-hour blocks.
+- **Contact step submission** no longer fails when the contact already exists in another organization's contact book.
+- **Workflow navigation** from the workflows table no longer redirects to the wrong page when switching between organizations.
+
+**AI quality testing**
+
+- **Health check questions** added from the AI interaction log now save the correct answer and expected sources
+
+</Update>
+
+<Update label="May 24, 2026" description="Release notes">
+
+### New features
+
+**Processes**
+
+- **Bulk expression creation** lets staff select multiple form inputs in the process builder and generate their corresponding expressions in one click.
+
+### Improvements
+
+**Cases**
+
+- **Signature re-signing** can now be made optional at the process level, so residents do not need to re-sign every signature step after a minor edit.
+- **Contact form fields** now display per-field "Optional" labels based on the process configuration, not just on the overall contact step.
+- **Connector delete button** now appears when selecting a connection in the process editor, replacing the previous keyboard-only shortcut.
+- **Clicking****"+ Add Option"****automatically focuses the text field** on radio buttons or dropdowns, saving a click.
+- **AI pre-review** now considers the full contact record (birthdate, email, phone, address) when validating form submissions, not just the contact name.
+
+**Contacts**
+
+- **Contact book selector** lets staff choose which organization's contact book to work in from the contacts page.
+
+### Fixes
+
+**Contacts**
+
+- **Contact birthday** can now be cleared from the contact page.
+
+**Cases**
+
+- **Email print preview** now renders line breaks correctly instead of showing raw HTML tags.
+
+</Update>
+
+<Update label="May 17, 2026" description="Release notes">
+
+### New features
+
+- **Process copying** now preserves all block types, so duplicating a complex workflow no longer requires manual re-creation of each component.
+- **SSO login enforcement** is now active for configured organizations. Staff with SSO-enabled email domains are directed to their identity provider at login, and first-time SSO users see a confirmation screen to securely link their existing account.
+
+### Improvements
+
+**AI assistant**
+
+- **Date-sensitive questions** now return more relevant results. The assistant filters out outdated content while keeping nearby dates ranked higher, so questions like "What events are coming up?" surface the right information.
+- **Source retrieval** now expands from a matched snippet to include the full page context when appropriate, giving the assistant richer material to draw from and reducing incomplete answers.
+- **Integration call reliability** is improved by rate-limiting repeated calls to the same API endpoint, preventing the assistant from looping on a single external service.
+
+**AI analytics**
+
+- **Conversation categories** in the AI interaction log have been updated to a more granular set including service request, status check, complaint, eligibility question, and others.
+
+**AI quality testing**
+
+- **Quality report pages** now have unique URLs so staff can share a link to a specific test run or scenario and navigate with the browser back button.
+
+**Integrations**
+
+- **API connections** can now be enabled or disabled per surface (chat, voice, workflows) individually, rather than toggling the entire connection on or off.
+
+### Fixes
+
+**AI assistant**
+
+- **Chatbot greeting overlay** on mobile no longer blocks the text-input area, so residents can type and send messages without obstruction.
+
+**AI phone and voice**
+
+- **Voice call address capture** now validates results against the organization's service region, preventing out-of-area addresses from being recorded on a case.
+
+**Payments**
+
+- **Receipt pages** now load correctly for all intended recipients regardless of their permission level.
+
+</Update>
+
+<Update label="May 10, 2026" description="Release notes">
+
+### New features
+
+**SSO**
+
+- **Microsoft Entra ID single sign-on** is now available. Staff can log in through their organization's Entra directory with automatic account provisioning, session timeout controls, and clear login error messages.
+
+**AI quality testing**
+
+- **In-progress test runs** now show results as each scenario completes, so staff can review responses without waiting for the full run to finish.
+- **Bulk-delete** in the question bank lets staff select and remove multiple test scenarios at once.
+
+**Payments**
+
+- **Charge line items** now support per-line AR codes and distribution codes for finer accounting control in billing steps.
+- **Payment exports** now include a Case ID column so staff can match Stripe transactions to specific cases.
+
+### Improvements
+
+**AI assistant**
+
+- **Process links in chat** appear more reliably when the AI retrieves a relevant process, so residents are more likely to see applicable forms and workflows.
+
+**AI phone and voice**
+
+- **Voice responses** now end with a single question to keep calls focused and avoid confusion when callers answer prematurely.
+
+**AI quality testing**
+
+- **Test evaluations** are more lenient when expected answers or sources are missing, reducing the number of unfairly flagged conversations.
+
+**AI analytics**
+
+- **AI interaction log search** is now significantly faster, even for large organizations with long conversation histories.
+
+**Knowledge base**
+
+- **Page ingestion** now retries individually when batch scraping misses links, so fewer knowledge base pages are left unindexed.
+
+**Integrations**
+
+- **Cayenta utility billing** now supports additional account-lookup endpoints, broadening which organizations can use it for balance and account-validation flows.
+- **Cityworks service requests** now automatically populate the date-completed field when a service request is closed externally.
+
+### Fixes
+
+**Cases**
+
+- **Case renaming** no longer visually reverts after printing.
+- **Tag filters** on the case dashboard now save correctly on page load.
+- **Add-an-item fields** now accept input after a reviewer requests changes on a submitted form.
+- **Address fields** on contact steps no longer fail when resubmitting a form that had other validation issues.
+
+**AI phone and voice**
+
+- **Call transfers** now route to the correct department. The voice agent was using the wrong identifier when connecting callers.
+
+**AI assistant**
+
+- **Long conversations** no longer cause the chatbot to repeat the same action in a loop. The agent now recovers and responds.
+
+**Contacts**
+
+- **Email search** in the contact book now finds contacts whose email is stored on the identity record rather than the contact entry.
+
+</Update>
+
+<Update label="May 3, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **File attachments** are now supported in assistant conversations. Staff can upload text, PDF, Word, Excel, PowerPoint, CSV, Markdown, and HTML files (up to 25 MB each), and the assistant reads their contents to answer questions.
+
+**AI phone and voice**
+
+- **Transfer failsafe** automatically reroutes calls to your default transfer line if the assistant's call-transfer tool starts failing repeatedly. Designated team members receive an email alert when the failsafe activates, so no caller gets dropped.
+
+**AI quality testing**
+
+- **Test run PDF export** lets staff download a formatted report listing each question, the AI response, and the evaluation result from a health check run.
+
+**Integrations**
+
+- **CityWorks closed-work-order sync** now closes cases automatically when the linked work order is closed in CityWorks. The case is updated with the close date and advanced through its workflow without manual staff action.
+
+### Improvements
+
+**AI analytics**
+
+- **Analytics dashboard date ranges** are now flexible. Staff can select any custom date range and see aggregated metrics, rather than being limited to preset windows.
+- **Voice analytics transfer counts** no longer over-count conversations that touched multiple transfer departments.
+
+**AI phone and voice**
+
+- **Utility-billing answers** are more reliable. When the bill-history endpoint cannot find a customer's bills, the assistant falls back to a current-balance lookup so the resident still gets an answer. Cayenta tool descriptions have also been tuned to prevent the assistant from looping on the same call.
+
+**AI quality testing**
+
+- **Health check evaluations** are more accurate. Scoring is more lenient when expected answers or sources are missing, results now appear inline in the exported CSV, and bulk question uploads can include expected answers and sources.
+
+**Cases**
+
+- **Conditional rendering** now works inside add-an-item sections. Staff can hide or show inputs based on the answers a constituent gave for that specific item, including in nested add-an-item sections.
+- **Daily digest** now surfaces overdue internal steps for case managers. If you are listed as the case manager on a case, every overdue internal step appears in your digest, even if you are not directly assigned.
+
+**Integrations**
+
+- **Custom integration query parameters** can now be marked as required from the integration UI, just like body parameters.
+
+**Payments**
+
+- **Auto-payouts** now process oldest payments first, so older and larger payments are no longer held up behind newer ones.
+- **Payment link emails** now let residents complete payments directly, without a staffer having to grant access to the case first.
+
+### Fixes
+
+**Cases**
+
+- **Process case CSV exports** now align values with the correct columns, even for processes with nested sections, and follow the order fields appear in the process.
+- **Completed By filter** on the cases dashboard now shows staffers' names without first having to select an organization.
+- **View Document link** in the case feed now opens documents correctly.
+
+**Maps and GIS**
+
+- **ArcGIS connections** to feature services hosted behind Cloudflare now succeed. Valid GIS URLs that were previously blocked at the URL-validation step connect properly.
+
+</Update>
+
+<Update label="April 26, 2026" description="Release notes">
+
+### New features
+
+**AI assistant**
+
+- **Charts and tables** now render directly in assistant conversations. Staff can ask data questions and receive bar charts, line charts, pie charts, scatterplots, or formatted tables inline, then download them as images or CSV.
+- **Starter prompt cards** appear when opening the assistant so staff can quickly see what kinds of questions to ask and get accurate results on the first try.
+- **Rename and delete conversations** from the assistant sidebar to keep chat history organized.
+
+**AI phone and voice**
+
+- **Voice failsafe** automatically detects when call transfers are failing at a high rate and routes incoming calls directly to the default transfer line until the issue is resolved. Staff are notified by email when the failsafe activates.
+- **Voicemail intake** is now created automatically when a phone line is saved without a default transfer line, so callers can always leave a message.
+
+**AI quality testing**
+
+- **Scheduled health checks** let you run test scenarios on a daily, weekly, or monthly cadence so answer quality is monitored continuously without manual intervention.
+- **AI Judge details panel** shows specific issues, expected answers, source comparisons, and pass/fail status for each test scenario, replacing the previous summary-only view.
+
+**Knowledge base**
+
+- **CivicClerk crawler** ingests agendas, minutes, and meeting content from CivicClerk municipal meeting portals into the knowledge base.
+
+### Improvements
+
+**AI phone and voice**
+
+- **Scheduling calendar** now uses a tabbed layout with a week view for time-based schedules and a month calendar for holidays, replacing the previous stacked list.
+
+**AI analytics**
+
+- **Top flows diagram** shows only the top 10 flows with remaining flows grouped as "Other" for a cleaner view. A new transfer rate card displays the percentage of voice calls routed to a live agent.
+
+**Payments**
+
+- **Payment exports** now include payments from archived processes so staff can reconcile completed work without reactivating old processes.
+
+**Maps and GIS**
+
+- **Map start location** now centers on your organization's cases when opening the map view, instead of a fixed default location.
+
+**Integrations**
+
+- **SharePoint document parsing** now extracts content from Word document headers, footers, and tables, and reads Excel files more accurately.
+
+### Fixes
+
+**Cases**
+
+- **Case data exports** now correctly align columns with values in processes that have nested sections or missing inputs.
+
+**Maps and GIS**
+
+- **ArcGIS connections** now work reliably with older servers and servers that have pagination disabled.
+- **GIS location lookups** now use precise coordinates as ground truth and no longer fall back to address-based matching, fixing inaccurate boundary determinations.
+
+</Update>
+

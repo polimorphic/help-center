@@ -1,0 +1,50 @@
+---
+title: "Set up an AI phone line"
+---
+
+Phones ring all day with the same questions about hours, trash pickup, and permits, and they keep ringing after you've gone home. An AI phone line answers those calls, greets callers the way you'd like, follows your after-hours and holiday schedule, and transfers callers to a person when they need one.
+
+## Before you begin
+
+- Polimorphic provides the phone number. Contact support to get one.
+- Add your transfer lines first, such as the clerk's office and public works. See [Transfer lines and after-hours routing](/ai-front-desk/phone-and-voice/transfer-lines-and-after-hours-routing).
+- Your organization can have up to five AI phone lines.
+
+## Start a new phone line
+
+1. Select **Settings**, then **Channels**.
+2. Open the **Voice** tab.
+3. Select **Add Phone Line**.
+
+## Set the number and greeting
+
+1. In **Name**, enter a name, such as *Main Town Hall line*.
+2. In **Phone Number**, enter the number Polimorphic gave you.
+3. In **Default Transfer Line**, pick where calls go when no other line fits, such as the front desk.
+4. In **Default greeting message**, enter what callers hear first, such as *Thank you for calling the Town of Fairview. How can I help you today?*
+5. Optional: under **Voicemail Intake**, pick a [workflow](/getting-started/glossary) for voicemails, or select **Create Voicemail Intake**.
+6. Select **Next**.
+
+## Pick a voice
+
+1. Under **Voice model**, pick the voice Polimorphic recommended for your line.
+2. Select **Next**.
+
+## Plan for after hours and holidays
+
+1. Optional: add a time-based configuration for after hours. Enter a **Configuration Name**, pick **Days of Week**, set **Start Time**, **End Time**, and **Timezone**, and enter a **Greeting Message**, such as *Town Hall is closed. I can still answer most questions.*
+2. Optional: pick a different **Default Transfer Line** for those hours, such as an on-call line.
+3. Optional: add a holiday-based configuration. Enter a **Holiday Name** and **Greeting Message**. Turn on **Apply to all transfer lines** to use the holiday transfer line for every transfer.
+4. Select **Save**.
+
+If you see **No Transfer Fallback**, the line has no place to send callers who ask for a person. Go back and pick a **Default Transfer Line**, or select **Save Anyway**.
+
+The line appears on the **Voice** tab. Call the number yourself to test the greeting, ask a question, and ask for a person. Calls appear in **Log** with the interaction type **Voice**.
+
+If a caller wants to apply for something, the AI can text them a link to the form. Callers with blocked or private numbers can't get a text.
+
+## Related articles
+
+- [Transfer lines and after-hours routing](/ai-front-desk/phone-and-voice/transfer-lines-and-after-hours-routing)
+- [Test the AI before go-live](/ai-front-desk/how-the-ai-answers/test-the-ai-before-go-live)
+- [Review interaction logs](/ai-front-desk/monitoring/review-interaction-logs)

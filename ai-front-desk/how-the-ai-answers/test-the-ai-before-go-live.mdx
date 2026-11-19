@@ -1,0 +1,56 @@
+---
+title: "Test the AI before go-live"
+---
+
+Before residents start asking the AI questions, you'll want to know it gets the important ones right. A health check runs your real resident questions through the AI and shows you which answers pass, so you can fix the gaps before go-live.
+
+## Before you begin
+
+- Add your main knowledge sources first, such as your website and fee schedules.
+- Gather 20 to 50 questions residents really ask. Good places to look are call logs, the front counter, and email inboxes. Include a few questions you know the AI shouldn't answer.
+
+## Add test questions
+
+1. Select **Health Check** under **AI Front Desk** in the left menu.
+2. Open the **Questions** tab.
+3. Select **Add Questions**.
+4. In **Question**, enter a question the way a resident would ask it, such as *How much does it cost to register my dog?*
+5. In **Category**, enter a group, such as *Animal control*.
+6. Optional: in **Correct Answer**, enter the answer you expect. This helps score the response.
+7. Optional: under **Relevant Sources**, select **Add source** and pick the page, document, or map layer the AI should use.
+8. Select **Save**.
+
+The question shows on the **Questions** tab. To add many questions at once, select **Upload CSV** instead. CSV stands for comma-separated values. The dialog shows the columns to use.
+
+## Run a health check
+
+1. Select **Run Health Check**.
+2. Pick **All questions** or one **Category**.
+3. Optional: in **Notes**, describe what changed since the last run, such as *Added 2027 fee schedule*.
+4. Select **Run**.
+
+## See which answers need work
+
+1. Open the **Results** tab when the run finishes.
+2. Check the **Pass Rate** and **Results by Category**.
+3. Open any question marked **Fail** or **Pass with Warnings**.
+4. Select **FAQ** on a failed question to write the missing answer as an [FAQ](/getting-started/glossary) without leaving the results.
+5. Compare **Expected Sources** with **Sources Used**, and read the **AI Judge Evaluation**.
+
+## Try the widget and phone line yourself
+
+1. Select **Settings**, then **Channels**.
+2. On the **Chat** tab, select **Open Chat in Test Mode**.
+3. Ask several questions the way a resident would.
+4. On the **Search** tab, select **Open Search in Test Mode** and try the same questions.
+5. If you have an AI phone line, call it and ask a question that should transfer you to staff.
+
+Test chats and searches are saved as test logs, so they don't mix with real resident conversations. To find them, open **Log** and set **Log Type** to **Test logs**.
+
+When you're done, you'll have a pass rate for your top questions and a list of answers to fix. Fix the sources behind failed answers, then run the health check again. The **Pass Rate over Time** chart shows whether answers are getting better.
+
+## Related articles
+
+- [Improve a wrong or weak answer](/ai-front-desk/how-the-ai-answers/improve-a-wrong-or-weak-answer)
+- [How the AI finds and writes answers](/ai-front-desk/how-the-ai-answers/how-the-ai-finds-and-writes-answers)
+- [Review interaction logs](/ai-front-desk/monitoring/review-interaction-logs)

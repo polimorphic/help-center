@@ -1,0 +1,52 @@
+---
+title: "Add GIS layers for location-based answers"
+---
+
+Some of the most common resident questions depend on where they live: "When is my trash day?" or "Which council district am I in?" Adding a map layer, such as trash collection zones, lets the AI ask for an address and give the right answer.
+
+## Before you begin
+
+- Get one of these from your [GIS](/getting-started/glossary) (geographic information system) team:
+  - An ArcGIS FeatureServer or MapServer web address, or
+  - A file: a ZIP of a shapefile, a GeoPackage (.gpkg), or GeoJSON, up to 100 MB.
+- Make sure the layer has the field residents need answered, such as *pickup day* or *council district*.
+
+## Describe the layer
+
+1. Select **Settings** in the left menu.
+2. Under **Build & Deploy**, select **GIS Layers**.
+3. Select **Add GIS Layer**.
+4. In **Name**, enter a clear name, such as *Trash and recycling zones*.
+5. In **Description**, explain what questions the layer answers, such as *Use to find a resident's trash and recycling pickup day by address.* The AI reads this to decide when to use the layer.
+6. Go to the next step.
+
+## Connect the data
+
+Under **How will this layer be connected?**, pick one option.
+
+### Use a live map layer
+
+1. Select **ArcGIS**.
+2. In **ArcGIS URL**, paste the FeatureServer or MapServer address.
+3. In **Layer**, select the layer you'd like to use.
+
+### Upload a map file
+
+1. Select **Upload GIS File**.
+2. Pick your ZIP, GeoPackage, or GeoJSON file.
+3. Wait while Polimorphic reads the file's fields. You can't continue until this finishes.
+
+## Save and check the layer
+
+1. Select **Save**.
+2. In the list, select **View GIS layer on map** to confirm the shapes look right.
+
+The layer appears on the **GIS Layers** tab with its **Geometry Type** and **Geometry Count**. When a resident asks a question the layer can answer, the AI asks for an address and checks the layer. If no layer matches a question, the AI doesn't ask for an address.
+
+To test it, add a health check question such as *When is trash pickup at 412 Maple Ave?* and add the layer as a relevant source.
+
+## Related articles
+
+- [How the AI finds and writes answers](/ai-front-desk/how-the-ai-answers/how-the-ai-finds-and-writes-answers)
+- [Knowledge source types](/ai-front-desk/knowledge-base/knowledge-source-types)
+- [Test the AI before go-live](/ai-front-desk/how-the-ai-answers/test-the-ai-before-go-live)

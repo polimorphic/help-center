@@ -1,0 +1,51 @@
+---
+title: "Workflow block types"
+---
+
+When you're building a [workflow](/getting-started/glossary) and not sure which step fits, start here. This page covers every step type in the **Add Steps** list of the **Workflow Editor** and the settings they share.
+
+## Step types
+
+| Step | What it does | Example |
+| --- | --- | --- |
+| **Complete Form** | Asks questions. A resident or a staff member can complete it. Can set the [case status](/getting-started/glossary) when it's done. | A resident applies for a block party; a clerk completes an internal review checklist. |
+| **Collect Payment** | Creates a bill from one or more line items. Amounts can be fixed or calculated. | A $75 application fee. |
+| **Send Message** (Beta) | Sends an email or text. Can include form answers and [case](/getting-started/glossary) documents. Can wait for staff review. | An approval email to the applicant. |
+| **Generate Document** | Fills a document template with case information. Not available for every organization. | An approval letter with the applicant's name and address. |
+| **Change Case Status** | Sets the case status, such as Open or Closed. | Closes the case after the approval email. |
+| **Add Tag** | Adds or removes a tag on the case. | Adds "Needs inspection." |
+| **Assign Case Role** | Sets a person as **Case Manager** or **Case Requester**. | Makes the building inspector the [case manager](/getting-started/glossary). |
+
+## Settings most steps share
+
+| Setting | What it controls |
+| --- | --- |
+| **Step Name** | The name staff and residents see. |
+| **Who can complete this step** | **Public facing (external)** for residents, or **Staff only (internal)** for your team. |
+| **Add assignees** | Who hears about the step. **Assign & Notify** gives them the work. **Notify Only** sends a heads-up. |
+| **Time to Complete** | Sends a reminder if the step isn't done in the hours or minutes you set. |
+| **Require submission confirmation** | Asks the person to confirm before the form submits. |
+
+## Connections
+
+| Item | What it means |
+| --- | --- |
+| Start | Where the workflow begins. Connect it to the first step. The editor flags a Start with no connection, and any step that nothing leads into. |
+| Arrow | Sets the order of steps. A step opens when the steps before it are done. |
+| Join type | When several arrows lead into one step, the step waits for all of them or starts after any one of them. |
+| Condition | A rule that must be true for the step to run, such as "applicant type is Business." |
+
+## Workflow-level settings
+
+| Setting | Where | What it controls |
+| --- | --- | --- |
+| **Tracker Stages** | Editor sidebar | Groups steps into phases residents can follow. |
+| **Formulas** | Editor sidebar | Reusable calculations, such as a fee per seat. |
+| **Notify When** | **Workflow Settings** | Emails when a case is opened, closed, or receives an email. |
+| **Manage access** | **Workflow Settings** | Who can start and see cases from this workflow. |
+
+## Related articles
+
+- [How workflows work: steps, forms, and publishing](/building-workflows/how-workflows-work-steps-forms-and-publishing)
+- [Add a payment step](/building-workflows/add-a-payment-step)
+- [Route work with assignment and communication steps](/building-workflows/route-work-with-assignment-and-communication-steps)

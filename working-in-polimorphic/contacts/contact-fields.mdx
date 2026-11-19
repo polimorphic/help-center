@@ -1,0 +1,61 @@
+---
+title: "Contact fields"
+---
+
+When you're adding a [contact](/getting-started/glossary) or preparing a file to import, it helps to know what each field does. Here's every field on a contact and how Polimorphic uses it.
+
+## Contact type
+
+| Type | Use it for |
+| --- | --- |
+| **Individual** | A person, such as a resident or applicant. |
+| **Organization** | A business, nonprofit, contractor, or other group. Uses **Organization Name** instead of first and last name. |
+
+## Name fields
+
+| Field | Notes |
+| --- | --- |
+| **Title** | Optional. Such as Mrs. or Dr. |
+| **First Name** | Required for individuals. Required when you import. |
+| **Middle Name** | Optional. |
+| **Last Name** | Required for individuals. Required when you import. |
+| **Suffix** | Optional. Such as Jr. |
+| **Organization Name** | Required for organizations. |
+
+## Contact details
+
+| Field | Notes |
+| --- | --- |
+| **Date of Birth** | Optional. Shown as "Birthday" on the contact page. |
+| **Email** | A contact can have more than one. Used to match [cases](/getting-started/glossary) and replies to the contact. Capital letters don't matter when matching. |
+| **Phone** | A contact can have more than one. Used to match calls and texts to the contact. Invalid numbers aren't saved. |
+| **Address** | A contact can have more than one. Addresses are checked against a mapping service, so contacts can appear on the map view. |
+| **Tags** | Labels for grouping and filtering contacts, such as *Contractor*. Tags are shared across your organization. |
+| **Additional Data** | Your own label and value pairs, such as *Parcel ID* and *04-112-009*. Called "Attributions" on the contact page and in imports. |
+| **Related Contacts** | Links to other contacts, such as a business owner and their business. |
+| **Notes** | Internal notes on the contact page. Residents never see them. |
+
+## Match columns when you import
+
+When you import a CSV file, you can match your file's columns to these groups:
+
+| Import group | What to map |
+| --- | --- |
+| Name fields | **Title**, **First Name**, **Middle Name**, **Last Name**, **Suffix** |
+| **Date of Birth** | One column. |
+| **Emails** | One or more columns. |
+| **Phones** | One or more columns. |
+| **One-line Addresses** | Columns that hold a full address in one cell. |
+| **Structured Addresses** | Separate columns for **Street**, **Unit**, **City**, **State**, ZIP code, **Latitude**, and **Longitude**. |
+| **Tags** | One or more columns. Each value becomes a tag. |
+| **Attributions** | A name and value pair for your own data. |
+
+## Columns on the Contacts page
+
+The Contacts table shows **Name**, **Last Activity**, **Email**, **Phone**, **Address**, and **Tags**. You can filter by **Tags** and **Geographic area**.
+
+## Related articles
+
+- [Add or edit a contact](/working-in-polimorphic/contacts/add-or-edit-a-contact)
+- [Import contacts from a file](/working-in-polimorphic/contacts/import-contacts-from-a-file)
+- [How contacts and interaction history work](/working-in-polimorphic/contacts/how-contacts-and-interaction-history-work)

@@ -1,0 +1,71 @@
+---
+title: "Why a recipient didn't receive a message"
+---
+
+A resident calls to say they never got the notice everyone else did. It's frustrating for them, but the cause is usually one of a few things, and most are quick to fix. Work through these in order.
+
+## The resident wasn't on the recipient list
+
+The recipient list is built from your [contact book](/getting-started/glossary) at the moment you send. A resident is left out if:
+
+- They aren't in your [contact](/getting-started/glossary) book.
+- They don't have the tag you targeted, or they have a tag you excluded.
+- Their address on file is outside the area you drew or the [GIS](/getting-started/glossary) (geographic information system) layer you picked.
+- Someone removed them by name in the **Do Not Send To** step.
+
+**Fix:** open the resident's contact and check their tags and address. Then open the communication and check the recipient settings. If the resident should have been included, update their contact and send them a separate message.
+
+## The resident has no email address or phone number
+
+An email goes only to contacts with an email address. A text goes only to contacts with a phone number. Each contact gets one message, sent to one address or number, even if they have several on file.
+
+**Fix:** open the contact and confirm the right email address or phone number is there. See [Add or edit a contact](/working-in-polimorphic/contacts/add-or-edit-a-contact).
+
+## The resident opted out of texts
+
+A resident can reply **STOP** to stop texts from a phone number, and **START** to get them again. Opted-out numbers are left out of text sends automatically. Only the single word STOP counts. A reply like "cancel" doesn't opt anyone out.
+
+An opt-out applies to the one phone line the resident texted, not your whole organization.
+
+**Fix:** ask the resident to text **START** to the number your messages come from. Then send the message again.
+
+If every person on your list has opted out, the send stops with an error instead of going out to no one.
+
+## The send is still in progress
+
+Large sends go out in batches, not all at once. A communication can still show as in progress for a while after the first people get it. That's normal.
+
+**Fix:** wait, then check the resident's status in the communication's results.
+
+## The message failed or bounced
+
+Open the communication's results and find the resident. Each person has a delivery status, such as **Delivered**, **Not delivered**, or **Pending**.
+
+A failed or bounced message usually means one of these:
+
+- The address or number is wrong or no longer works.
+- The text was sent from the wrong AI number. If your organization has both AI Voice and outbound texting, it has two AI numbers. The AI Voice number can't send outbound texts, so a text sent from it fails.
+
+A delivered status means the sending service accepted the message. It doesn't prove the resident's phone or inbox showed it.
+
+**Fix:** confirm the address or number with the resident and update their contact. Ask them to check spam or junk folders for email. If a text failed, check which number it went out from. If it was your AI Voice number, send it again from your texting number, or contact support if you're not sure which number is which.
+
+## Your organization's email domain isn't verified
+
+If you send from your own domain, such as *@springfieldtx.gov*, the domain needs to be verified first. If it isn't, the send fails with a message about verifying the domain.
+
+**Fix:** ask your administrator to verify the domain. See [Send email from your own domain](/administration/send-email-from-your-own-domain).
+
+## Can't open the communication's results?
+
+Seeing who received a communication takes access to [outbound communications](/getting-started/glossary). If you can't open it, ask your Polimorphic administrator to add you to a group that has it. See [Roles and permissions](/administration/roles-and-permissions).
+
+## When to contact support
+
+Contact Polimorphic support if:
+
+- The resident meets every check above but still shows as not delivered.
+- A whole send shows as failed.
+- A send has shown as in progress for more than a day.
+
+Include the communication's name, the date you sent it, and the resident's email address or phone number.

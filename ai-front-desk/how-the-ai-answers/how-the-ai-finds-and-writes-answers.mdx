@@ -1,0 +1,60 @@
+---
+title: "How the AI finds and writes answers"
+---
+
+When a resident gets a surprising answer, the first question is usually "where did that come from?" The [AI Front Desk](/getting-started/glossary) answers by searching the sources your organization gives it, then writing a reply from what it finds. It only knows what's in your knowledge sources.
+
+Once you know where answers come from, you can fix a wrong one at its source instead of guessing, and you'll have a good idea of what residents will hear before you go live.
+
+## How an answer comes together
+
+![Flow diagram with five boxes from left to right: Resident asks a question, AI searches your knowledge sources, AI looks up details if needed such as a map layer or connected system, AI writes an answer from what it found, Answer shows its sources or offers a person or a form.](/images/articles/56918030725019.png)
+
+### A resident asks a question
+
+Questions come in through the chat widget, the search bar on your website, a text message, or a phone call. All of them use the same knowledge.
+
+### The AI searches your knowledge sources
+
+The AI runs several searches at once and pulls the most relevant passages. It matches on meaning, so a resident who asks about "trash" can find a page about "solid waste collection." Sources can include:
+
+- Pages from your website and other links
+- Uploaded documents, such as a fee schedule
+- [FAQs](/getting-started/glossary) (frequently asked questions) you write
+- [Workflows](/getting-started/glossary) residents can apply through
+- Transfer lines for phone calls
+- [GIS](/getting-started/glossary) (geographic information system) map layers
+
+Residents only get answers from sources set to **Everyone**. Sources set to **Staff only** are used only in staff tools. Archived sources aren't used at all.
+
+### The AI looks up details when needed
+
+Some answers depend on the person asking. If the question depends on location, such as "When is my recycling day?", and you have a matching map layer, the AI asks for an address and checks the layer. If your organization has a connected system, the AI may look up details there, such as a bill balance. These lookups are called tools.
+
+### The AI writes the answer
+
+The AI writes a reply from the passages it found. It gives phone numbers, email addresses, and street addresses only when they appear word for word in a source. Every link in an answer is checked against the sources. A link that doesn't match a source is removed.
+
+### The answer shows sources or offers next steps
+
+Web pages and documents appear as sources the resident can open. FAQs, transfer lines, and map layers can shape an answer but don't appear as links. If the question matches a workflow, the AI can point the resident to the form. On the phone, it can transfer the caller to a staff line or offer to text a link.
+
+If the AI finds nothing useful, it says it can't help with that question rather than guessing. If a resident writes in a language your organization doesn't support, the AI replies with the languages it can help in.
+
+## Example: a bulk-item pickup question
+
+A resident in the Town of Fairview opens the chat on the public works page and asks, "When can I put out an old couch?"
+
+1. The AI finds the town's *Bulk Item Collection* page and a *Collection zones* map layer.
+2. Because pickup depends on the zone, the AI asks for the resident's address.
+3. The resident types *412 Maple Ave*. The AI checks the map layer and finds Zone B.
+4. The AI answers that Zone B bulk pickup is the first Monday of the month and links to the Bulk Item Collection page.
+
+If the town later changes the schedule, staff update the web page. The next scheduled crawl picks up the change, and answers follow.
+
+## Related articles
+
+- [Knowledge base sources](/ai-front-desk/knowledge-base/knowledge-base-sources)
+- [Test the AI before go-live](/ai-front-desk/how-the-ai-answers/test-the-ai-before-go-live)
+- [Improve a wrong or weak answer](/ai-front-desk/how-the-ai-answers/improve-a-wrong-or-weak-answer)
+- [Add GIS layers for location-based answers](/ai-front-desk/knowledge-base/add-gis-layers-for-location-based-answers)

@@ -1,0 +1,45 @@
+---
+title: "Transfer lines and after-hours routing"
+---
+
+When a caller asks for a person, you want them to reach the right desk, or the right after-hours number when the office is closed. Transfer lines tell the AI where to send calls. Here's what each setting does and how the AI picks a line. Setting up for a holiday? See [Set up holiday and after-hours routing for AI Voice](/ai-front-desk/phone-and-voice/set-up-holiday-and-after-hours-routing-for-ai-voice).
+
+Transfer lines are on the **Transfer Lines** page in **Settings**, under **General**. Phone line schedules are on the phone line itself, under **Settings**, then **Channels**, then **Voice**.
+
+## Set up a transfer line
+
+| Field | Required | What it does |
+| --- | --- | --- |
+| **Name** | Yes | The line's name, such as *Utility Billing*. |
+| **Number** | Yes | The phone number the call goes to. |
+| **Extension** | No | An extension to dial after connecting. |
+| **Services and Departments** | Yes | Topics this line handles, such as *water bills, shutoffs*. The AI matches caller requests to these. |
+| **Confirmation Prompt** | No | What the AI asks before transferring, such as *Would you like me to transfer you to utility billing?* |
+
+## How the AI decides where a call goes
+
+1. When a caller asks for a person, the AI looks for a transfer line that matches the request.
+2. If none matches, the call goes to the phone line's **Default Transfer Line**.
+3. If the matched line is outside its hours and has an alternate number, the call goes to the alternate number.
+4. If the line is outside its hours and has no alternate number, the AI treats the line as closed. It doesn't dial the main number.
+
+## After-hours and holiday routing
+
+Transfer lines can send calls to an alternate number outside their hours, and the phone line can switch greetings and default transfer lines on a schedule or for a holiday. See [Set up holiday and after-hours routing for AI Voice](/ai-front-desk/phone-and-voice/set-up-holiday-and-after-hours-routing-for-ai-voice) for how to set that up.
+
+## Add many transfer lines at once
+
+To add many transfer lines at once, select **Bulk Upload**, then **Download CSV Template**. Fill in the template and select **Upload CSV File**.
+
+The new lines appear on the **Transfer Lines** tab.
+
+## See transfers in analytics
+
+The **Voice Interactions by Transfer Line** chart labels calls sent to the phone line's default number as *Default*. Calls to numbers that match no transfer line are labeled *Unmatched*.
+
+## Related articles
+
+- [Set up holiday and after-hours routing for AI Voice](/ai-front-desk/phone-and-voice/set-up-holiday-and-after-hours-routing-for-ai-voice)
+- [Set up an AI phone line](/ai-front-desk/phone-and-voice/set-up-an-ai-phone-line)
+- [Knowledge source types](/ai-front-desk/knowledge-base/knowledge-source-types)
+- [Analytics dashboards and reports](/ai-front-desk/monitoring/analytics-dashboards-and-reports)

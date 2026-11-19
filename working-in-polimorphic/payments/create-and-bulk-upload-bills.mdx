@@ -1,0 +1,54 @@
+---
+title: "Create and bulk-upload bills"
+---
+
+Not every payment starts with an application. For things like water bills or parking tickets, residents just need to look up what they owe and pay it. A payment type holds those bills so residents can find and pay them online.
+
+## Before you begin
+
+- Your organization needs payments set up with Polimorphic. See [How to connect your Stripe account to accept payments](/working-in-polimorphic/payments/how-to-connect-your-stripe-account-to-accept-payments).
+- Think about what residents will use to find their bill, such as an account number or ticket number. This is the bill's key.
+
+## How bills get created
+
+Bills come from two places:
+
+- **A workflow payment step** creates a bill when a resident reaches that step, such as a permit fee. See [Add a payment step](/building-workflows/add-a-payment-step).
+- **A payment type** holds bills that aren't tied to an application, such as monthly water bills. This article covers payment types.
+
+## Create a payment type
+
+1. Select **Payments** in the left menu.
+2. Select **Add Payment Type**.
+3. In **Name**, enter a name residents will recognize, such as *Water Utility Bill*.
+4. In **Description**, explain what the payment is for.
+5. In **Key Name**, enter what residents will search by, such as *Account Number*.
+6. In **Key Description**, tell residents where to find it, such as *Printed at the top right of your bill*.
+7. Fill in **Bill Name** and **Bill Description** with the default text for bills of this type.
+8. Save the payment type.
+
+The payment type shows on the **Payment Types** tab, ready for bills.
+
+## Add one bill
+
+Bills can no longer be added one at a time from a payment type. To add bills, use **Upload Bills** as described below, or contact Polimorphic support for help loading them.
+
+## Add many bills at once
+
+The **Upload Bills** button on a payment type accepts only file formats that Polimorphic has set up for specific billing systems. If you'd like to load bills in bulk from your billing system, contact Polimorphic support. Tell them which system the file comes from and send a sample export with personal details removed.
+
+## Download your bills
+
+1. Open the payment type.
+2. Select **Download**.
+
+You get a CSV (comma-separated values) file of the bills and their payment status.
+
+## Where bills show up
+
+Staff can find bills with **Take Payment**, and residents can look them up on the payment type's payment page. The page also shows totals, such as **Amount Received**.
+
+## Related articles
+
+- [Take a payment on behalf of a resident](/working-in-polimorphic/payments/take-a-payment-on-behalf-of-a-resident)
+- [Add a payment step](/building-workflows/add-a-payment-step)

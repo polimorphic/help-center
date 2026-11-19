@@ -1,0 +1,49 @@
+---
+title: "Send email from your own domain"
+---
+
+Residents are more likely to open and trust an email that comes from an address they recognize, such as *notices@lakewoodco.gov*. To send Polimorphic email from your own domain, you'll add a few CNAME records at your DNS provider.
+
+## Before you begin
+
+- Set this up from the top-level organization in your workspace.
+- Loop in someone who can change DNS (Domain Name System) records for your domain, usually your IT team or web host. Polimorphic can't make this change for you.
+- CNAME stands for canonical name. It's a type of DNS record.
+
+## Add your domain
+
+1. Select **Settings** in the left menu.
+2. Select **Email Domains**.
+3. In **Email Domain**, enter your domain, such as *lakewoodco.gov*. Don't include the part before the @ sign.
+4. Select **Add domain**.
+5. Select **Set up verification**.
+
+## Add the DNS records at your provider
+
+1. Select **Show DNS records**.
+2. For each record, select **Copy record name** and paste it into your DNS provider.
+3. Select **Copy record value** and paste it into your DNS provider.
+4. Set each record's type to CNAME, as shown in the **Type** column.
+5. Save the records at your DNS provider.
+
+## Check that your domain is verified
+
+1. Return to **Email Domains**.
+2. Select **Check verification status**.
+
+Verification usually finishes within minutes but can take up to 72 hours while DNS changes spread. **Pending DNS Verification** during the first day is normal.
+
+Once the domain shows **Verified**, staff can pick an address on that domain as the sender for [outbound communications](/getting-started/glossary). If you send from an address on a domain that isn't verified, the send fails.
+
+| Status | Meaning |
+| --- | --- |
+| **Not verified** | You added the domain but haven't started verification. |
+| **Pending DNS Verification** | Polimorphic is waiting to see your DNS records. |
+| **Verified** | You can send from this domain. |
+| **Failed** | The records weren't found or don't match. Check them with your IT team. |
+
+## Related articles
+
+- [Send an email or SMS to many residents](/working-in-polimorphic/mass-communications/send-an-email-or-sms-to-many-residents)
+- [Why a recipient didn't receive a message](/working-in-polimorphic/mass-communications/why-a-recipient-didn-t-receive-a-message)
+- [Organization settings and tags](/administration/organization-settings-and-tags)

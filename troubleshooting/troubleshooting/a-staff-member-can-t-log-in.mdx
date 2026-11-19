@@ -1,0 +1,53 @@
+---
+title: "A staff member can't log in"
+---
+
+When a coworker can't sign in, start by asking one question: can they not get in at all, or do they get in but can't open a page? The answer points you to the right fix below.
+
+## They don't have access to your organization
+
+Each person needs an account that's been invited to your organization. If they were never invited, or they were removed, sign-in fails or they land in the wrong place.
+
+**Fix:** An administrator checks **Users** in settings and invites the person again if needed. See [Invite staff and manage accounts](/administration/invite-staff-and-manage-accounts).
+
+## They signed in but can't open a page
+
+This is an access problem, not a sign-in problem.
+
+**Fix:** Follow I don't see a feature or button.
+
+## They're not in the right single sign-on group
+
+With single sign-on ([SSO](/getting-started/glossary)), your identity provider, such as Microsoft Entra ID, decides who gets in and which groups they join. Groups managed by SSO show a lock icon. You can't add people to them in Polimorphic.
+
+**Fix:** Ask your IT team to add the person to the right group in your identity provider. Once that's done, have them sign in again.
+
+## The emailed link expired
+
+Sign-in links from **Sign in without a password** and password reset links stop working after a while.
+
+**Fix:** Request a new email and use the newest link.
+
+## The new password is rejected
+
+Each organization can set its own password rules. If someone belongs to two organizations, their password has to meet the stricter set.
+
+**Fix:** Follow the checklist under the password box. Once every rule is checked off, the password is accepted.
+
+## The reset email doesn't arrive
+
+**Fix:** Check the spelling of the email address and the spam or junk folder. Ask IT whether email from Polimorphic is being blocked.
+
+## Their session expired
+
+**Fix:** Sign in again. Your organization may set how long a session lasts.
+
+## When to contact support
+
+If none of these fixes work, contact support. Include the person's email address, organization, sign-in method (SSO or password), the exact error message, and the time it happened. Never send a password.
+
+## Related articles
+
+- [Log in or reset your password](/getting-started/log-in-and-reset-your-password)
+- [Set up single-sign-on with SAML or Microsoft Entra](/administration/set-up-single-sign-on-saml-or-microsoft-entra-id)
+- [Invite staff and manage accounts](/administration/invite-staff-and-manage-accounts)
