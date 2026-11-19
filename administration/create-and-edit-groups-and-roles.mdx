@@ -1,0 +1,64 @@
+---
+title: "Create and edit groups and roles"
+description: "Set up teams and the access they need in Settings."
+---
+
+When a new team starts using Polimorphic, or a team's job changes, you'll want their access to match. You do that with groups and roles: a group is a team of people, and a role is the set of permissions you give that group. If you're new to how these fit together, start with [Roles and permissions](/administration/roles-and-permissions).
+
+## Create a group
+
+1. Select **Settings** in the left menu, then select **Groups** under **Access**.
+2. Select **Add Group**.
+3. Enter a **Group Name**, such as *Code Enforcement*.
+4. Optional: add people under **Group Members (optional)**.
+5. Select **Save**.
+
+The group shows in the list. It doesn't grant any access until you give it a role.
+
+## Create a role
+
+1. Select **Settings** in the left menu, then select **Roles** under **Access**.
+2. Select **Add Role**.
+3. Enter a **Role Name**, such as *Permit Clerk*.
+4. Optional: under **Template**, pick a starting point, such as *Staff* or *Finance Admin*. You can adjust the permissions afterward.
+5. Under **Group**, pick the group that should get this role.
+6. Select **Save**.
+
+Everyone in that group gets the role's permissions.
+
+**Tip:** Starting from a template is usually faster than building a role from scratch. See [Roles and permissions matrix](/administration/roles-and-permissions-matrix) for what each permission allows.
+
+## Share a role with other organizations
+
+If your workspace has several organizations, you can turn on **Cross-Organization Role** when you create a role. Other organizations in the workspace can then assign it to their groups. Your organization keeps control of its name and permissions.
+
+If you leave it off, only groups in your organization can be assigned the role.
+
+## Add or remove people from a group
+
+1. Open **Groups** under **Access**.
+2. Find the group. You can use **Search groups...** to find it quickly.
+3. To add someone, use **Add member...** and pick their name.
+4. To take someone out, select **Remove member**.
+
+Their access changes as soon as you save. Someone who's removed from their only group loses the access that group gave them, so give them a heads-up first.
+
+To move someone to a different team instead, see [Invite staff and manage accounts](/administration/invite-staff-and-manage-accounts#move-someone-to-a-different-group).
+
+## Delete a group or role
+
+1. Open **Groups** or **Roles** under **Access**.
+2. Select **Delete Group** or **Delete Role** next to it, and confirm.
+
+People lose the access that group or role gave them. If you're deleting a group that still has members, you can pick **Reassign to another group** to move them first.
+
+## If you can't change a group
+
+- **Groups synced from single sign-on** show a lock icon. Their members come from your identity provider, so change membership there. See [Set up single sign-on](/administration/set-up-single-sign-on-saml-or-microsoft-entra-id).
+- **A group that gives someone permission to manage users** can't be removed while it's needed for that access.
+
+## Related articles
+
+- [Roles and permissions](/administration/roles-and-permissions)
+- [Roles and permissions matrix](/administration/roles-and-permissions-matrix)
+- [Invite staff and manage accounts](/administration/invite-staff-and-manage-accounts)
