@@ -160,6 +160,16 @@
               "ai-front-desk/monitoring/reveal-redacted-personal-information-in-a-log",
               "ai-front-desk/monitoring/analytics-dashboards-and-reports"
             ]
+          },
+          {
+            "group": "Assistant",
+            "pages": [
+              "ai-front-desk/assistant/what-is-the-assistant",
+              "ai-front-desk/assistant/start-and-continue-a-chat",
+              "ai-front-desk/assistant/dictate-a-message-to-the-assistant",
+              "ai-front-desk/assistant/create-charts-tables-and-documents",
+              "ai-front-desk/assistant/build-a-powerpoint-deck"
+            ]
           }
         ]
       },
