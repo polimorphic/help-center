@@ -20,19 +20,24 @@ The group shows in the list. It doesn't grant any access until you give it a rol
 1. Select **Settings** in the left menu, then select **Roles** under **Access**.
 2. Select **Add Role**.
 3. Enter a **Role Name**, such as *Permit Clerk*.
-4. Optional: under **Template**, pick a starting point, such as *Staff* or *Finance Admin*. You can adjust the permissions afterward.
-5. Under **Group**, pick the group that should get this role.
-6. Select **Save**.
+4. Optional: under **Template**, pick a starting point, such as *Staff* or *Finance Admin*. 
+5. Turn on the actions this role needs for each area, such as read or write. If you picked a template, adjust its permissions as needed.
+6. Under **Group**, pick the group that should get this role.
+7. Select **Save**.
 
 Everyone in that group gets the role's permissions.
 
 **Tip:** Starting from a template is usually faster than building a role from scratch. See [Roles and permissions matrix](/administration/roles-and-permissions-matrix) for what each permission allows.
+
+A role needs at least one permission. If you clear every permission, the role is removed and you'll need to create it again.
 
 ## Share a role with other organizations
 
 If your workspace has several organizations, you can turn on **Cross-Organization Role** when you create a role. Other organizations in the workspace can then assign it to their groups. Your organization keeps control of its name and permissions.
 
 If you leave it off, only groups in your organization can be assigned the role.
+
+A Cross-Organization Role can't include Organization settings, User management settings, or Assistant settings permissions.
 
 ## Add or remove people from a group
 
@@ -44,6 +49,15 @@ If you leave it off, only groups in your organization can be assigned the role.
 Their access changes as soon as you save. Someone who's removed from their only group loses the access that group gave them, so give them a heads-up first.
 
 To move someone to a different team instead, see [Invite staff and manage accounts](/administration/invite-staff-and-manage-accounts#move-someone-to-a-different-group).
+
+## Rename a group or role
+
+1. Open **Groups** or **Roles** under **Access**.
+2. Select the group or role to open its details.
+3. Edit the name.
+4. Select **Save**.
+
+The new name shows everywhere the group or role appears. If you cancel with unsaved changes, you're asked before they're discarded.
 
 ## Delete a group or role
 
