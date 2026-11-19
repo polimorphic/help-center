@@ -168,6 +168,7 @@
         "icon": "sparkles",
         "pages": [
           "assistant/what-is-the-assistant",
+          "assistant/what-the-assistant-can-look-up",
           "assistant/start-and-continue-a-chat",
           "assistant/dictate-a-message-to-the-assistant",
           "assistant/create-charts-tables-and-documents",
